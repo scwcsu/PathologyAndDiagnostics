@@ -1,7 +1,13 @@
 #!/bin/bash
 
-wget --header="Accept: application/fhir+xml" https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1 -O ../structures/CareConnect-DiagnosticReport-1.xml
-wget --header="Accept: application/fhir+xml" https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1 -O ../structures/CareConnect-ProcedureRequest-1.xml
+#########################################################################################
+# Bash script to grap the set of fhir structure definitions required to run validation  #
+#########################################################################################
+
+# Don't reload for now - these have problems validating and have been hand tweaked
+#wget --header="Accept: application/fhir+xml" https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1 -O ../structures/CareConnect-DiagnosticReport-1.xml
+#wget --header="Accept: application/fhir+xml" https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1 -O ../structures/CareConnect-ProcedureRequest-1.xml
+
 wget --header="Accept: application/fhir+xml" https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1 -O ../structures/CareConnect-Specimen-1.xml
 wget --header="Accept: application/fhir+xml" https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1 -O ../structures/CareConnect-Observation-1.xml
 wget --header="Accept: application/fhir+xml" https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Header-Organization-1 -O ../structures/CareConnect-ITK-Header-Organization-1.xml
