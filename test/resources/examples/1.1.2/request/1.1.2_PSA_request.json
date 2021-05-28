@@ -1,42 +1,184 @@
 {
-  "resourceType": "ProcedureRequest",
-  "id": "d9df1431-22ac-462a-946a-f195f6c639af",
-  "meta": {
-    "profile": [
-      "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"
-    ]
-  },
-  "identifier": [
-    {
+  "resourceType": "Bundle",
+  "id": "f862ec24-e05a-42d1-aea5-d0a9c092e6ae",
+  "identifier": {
       "system": "https://tools.ietf.org/html/rfc4122",
-      "value": "7e9bbd01-4e52-420d-b05b-48bc671d6708"
-    }
-  ],
-  "status": "active",
-  "intent": "order",
-  "priority": "routine",
-  "code": {
-    "coding": [
+      "value": "f36927ef-7703-45ed-b0e5-6ec6723cf0f6"
+  },
+  "type": "message",
+  "entry": [
       {
-        "system": "http://snomed.info/sct",
-        "code": "19518008",
-        "display": "Protein measurement, urine, quantitative 24 hour (procedure)"
+          "fullUrl": "urn:uuid:8e75d669-1794-45ab-a398-975817221e2f",
+          "resource": {
+              "resourceType": "MessageHeader",
+              "id": "8e75d669-1794-45ab-a398-975817221e2f",
+              "event": {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2",
+                  "code": "ITK012M",
+                  "display": "ITK National Pathology"
+              },
+              "receiver": {
+                  "reference": "urn:uuid:aa710162-89f5-48c3-80f0-8c2c70311690"
+              },
+              "sender": {
+                  "reference": "urn:uuid:bf7a76d3-5b44-4194-a9e0-d1cc1ea5e50e"
+              },
+              "timestamp": "2019-03-14T10:10:16+00:00",
+              "source": {
+                  "endpoint": "NOROT003"
+              },
+              "focus": [
+                  {
+                      "reference": "urn:uuid:a4409d7c-b613-477c-b623-87e60406c2f0"
+                  }
+              ]
+          }
+      },
+      {
+          "fullUrl": "urn:uuid:bf7a76d3-5b44-4194-a9e0-d1cc1ea5e50e",
+          "resource": {
+              "resourceType": "Organization",
+              "id": "bf7a76d3-5b44-4194-a9e0-d1cc1ea5e50e",
+              "meta": {
+                  "profile": [
+                      "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"
+                  ]
+              },
+              "identifier": [
+                  {
+                      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                      "value": "D82015"
+                  }
+              ],
+              "name": "LINGFIELD ROYAL INFIRMARY",
+              "address": [
+                  {
+                      "line": [
+                          "HEIGHTS LANE"
+                      ],
+                      "city": "BRADFORD",
+                      "district": "WEST YORKSHIRE",
+                      "postalCode": "BD9 6DP"
+                  }
+              ]
+          }
+      },
+      {
+          "fullUrl": "urn:uuid:aa710162-89f5-48c3-80f0-8c2c70311690",
+          "resource": {
+              "resourceType": "Organization",
+              "id": "aa710162-89f5-48c3-80f0-8c2c70311690",
+              "meta": {
+                  "profile": [
+                      "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"
+                  ]
+              },
+              "identifier": [
+                  {
+                      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                      "value": "RGD12"
+                  }
+              ],
+              "name": "LINGFIELD ROYAL INFIRMARY",
+              "address": [
+                  {
+                      "line": [
+                          "HEIGHTS LANE"
+                      ],
+                      "city": "BRADFORD",
+                      "district": "WEST YORKSHIRE",
+                      "postalCode": "BD9 6DP"
+                  }
+              ]
+          }
+      },
+      {
+          "fullUrl": "urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09",
+          "resource": {
+              "resourceType": "Patient",
+              "id": "8d6c2cd5-0eec-496a-88d0-3785a135df09",
+              "meta": {
+                  "profile": [
+                      "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"
+                  ]
+              },
+              "identifier": [
+                  {
+                      "extension": [
+                          {
+                              "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
+                              "valueCodeableConcept": {
+                                  "coding": [
+                                      {
+                                          "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1",
+                                          "code": "01",
+                                          "display": "Number present and verified"
+                                      }
+                                  ]
+                              }
+                          }
+                      ],
+                      "system": "https://fhir.nhs.uk/Id/nhs-number",
+                      "value": "9432003812"
+                  }
+              ],
+              "name": [
+                  {
+                      "use": "official",
+                      "family": "KAY",
+                      "given": [
+                          "Michael"
+                      ]
+                  }
+              ],
+              "gender": "female",
+              "birthDate": "1961-01-03"
+          }
+      },
+      {
+          "fullUrl": "urn:uuid:a4409d7c-b613-477c-b623-87e60406c2f0",
+          "resource": {
+              "resourceType": "ProcedureRequest",
+              "id": "d9df1431-22ac-462a-946a-f195f6c639af",
+              "meta": {
+                  "profile": [
+                      "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"
+                  ]
+              },
+              "identifier": [
+                  {
+                      "system": "https://tools.ietf.org/html/rfc4122",
+                      "value": "7e9bbd01-4e52-420d-b05b-48bc671d6708"
+                  }
+              ],
+              "status": "active",
+              "intent": "order",
+              "priority": "routine",
+              "code": {
+                  "coding": [
+                      {
+                          "system": "http://snomed.info/sct",
+                          "code": "19518008",
+                          "display": "Protein measurement, urine, quantitative 24 hour (procedure)"
+                      }
+                  ]
+              },
+              "subject": {
+                  "reference": "urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09",
+                  "display": "KAY, Michael"
+              },
+              "authoredOn": "2019-06-04",
+              "requester": {
+                  "agent": {
+                      "reference": "urn:uuid:bf7a76d3-5b44-4194-a9e0-d1cc1ea5e50e",
+                      "display": "Dr Ibrahim Khan"
+                  }
+              },
+              "performer": {
+                  "reference": "urn:uuid:aa710162-89f5-48c3-80f0-8c2c70311690",
+                  "display": "Lingfield Royal Infirmary (Blood Sciences)"
+              }
+          }
       }
-    ]
-  },
-  "subject": {
-    "reference": "urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09",
-    "display": "KAY, Michael"
-  },
-  "authoredOn": "2019-06-04",
-  "requester": {
-    "agent": {
-      "reference": "urn:uuid:bf7a76d3-5b44-4194-a9e0-d1cc1ea5e50e",
-      "display": "Dr Ibrahim Khan"
-    }
-  },
-  "performer": {
-    "reference": "urn:uuid:aa710162-89f5-48c3-80f0-8c2c70311690",
-    "display": "Lingfield Royal Infirmary (Blood Sciences)"
-  }
+  ]
 }
