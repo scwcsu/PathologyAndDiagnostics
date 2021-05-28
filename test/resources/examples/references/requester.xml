@@ -1,0 +1,17 @@
+<Organization>
+    <id value="bf7a76d3-5b44-4194-a9e0-d1cc1ea5e50e" />
+    <meta>
+      <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+    </meta>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+      <value value="D82015" />
+    </identifier>
+    <name value="LINGFIELD ROYAL INFIRMARY" />
+    <address>
+      <line value="HEIGHTS LANE" />
+      <city value="BRADFORD" />
+      <district value="WEST YORKSHIRE" />
+      <postalCode value="BD9 6DP" />
+    </address>
+  </Organization>

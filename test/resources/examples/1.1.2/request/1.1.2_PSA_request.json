@@ -3,7 +3,7 @@
   "id": "d9df1431-22ac-462a-946a-f195f6c639af",
   "meta": {
     "profile": [
-      "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"
+      "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"
     ]
   },
   "identifier": [

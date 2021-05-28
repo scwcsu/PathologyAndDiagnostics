@@ -1,0 +1,26 @@
+<Patient>
+    <id value="8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+    <meta>
+      <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1" />
+    </meta>
+    <identifier>
+      <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" />
+            <code value="01" />
+            <display value="Number present and verified" />
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <system value="https://fhir.nhs.uk/Id/nhs-number" />
+      <value value="9432003812" />
+    </identifier>
+    <name>
+      <use value="official" />
+      <family value="KAY" />
+      <given value="Michael" />
+    </name>
+    <gender value="female" />
+    <birthDate value="1961-01-03" />
+</Patient>

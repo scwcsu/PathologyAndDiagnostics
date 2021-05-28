@@ -1,36 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ProcedureRequest xmlns="http://hl7.org/fhir">
-  <id value="d9df1431-22ac-462a-946a-f195f6c639af" />
-  <meta>
-    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
-  </meta>
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="f862ec24-e05a-42d1-aea5-d0a9c092e6ae" />
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />
-    <value value="7e9bbd01-4e52-420d-b05b-48bc671d6708" />
+    <value value="f36927ef-7703-45ed-b0e5-6ec6723cf0f6" />
   </identifier>
-  <status value="active" />
-  <intent value="order" />
-  <priority value="routine" />
-  <code>
-    <coding>
-      <system value="http://snomed.info/sct" />
-      <code value="19518008" />
-      <display value="Protein measurement, urine, quantitative 24 hour (procedure)" />
-    </coding>
-  </code>
-  <subject>
-    <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09" />
-    <display value="KAY, Michael" />
-  </subject>
-  <authoredOn value="2019-06-04" />
-  <requester>
-    <agent>
-      <reference value="urn:uuid:bf7a76d3-5b44-4194-a9e0-d1cc1ea5e50e" />
-      <display value="Dr Ibrahim Khan" />
-    </agent>
-  </requester>
-  <performer>
-    <reference value="urn:uuid:aa710162-89f5-48c3-80f0-8c2c70311690" />
-    <display value="Lingfield Royal Infirmary (Blood Sciences)" />
-  </performer>
-</ProcedureRequest>
+  <type value="message" />
+  <entry>
+    <fullUrl value="urn:uuid:8e75d669-1794-45ab-a398-975817221e2f" />
+    <resource>
+      <MessageHeader>
+        <id value="8e75d669-1794-45ab-a398-975817221e2f" />
+        <event>
+          <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2" />
+          <code value="ITK012M" />
+          <display value="ITK National Pathology" />
+        </event>
+        <receiver>
+          <reference value="urn:uuid:aa710162-89f5-48c3-80f0-8c2c70311690" />
+        </receiver>
+        <sender>
+          <reference value="urn:uuid:bf7a76d3-5b44-4194-a9e0-d1cc1ea5e50e" />
+        </sender>
+        <timestamp value="2019-03-14T10:10:16+00:00" />
+        <source>
+          <endpoint value="NOROT003" />
+        </source>
+        <focus>
+          <reference value="urn:uuid:a4409d7c-b613-477c-b623-87e60406c2f0" />
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:bf7a76d3-5b44-4194-a9e0-d1cc1ea5e50e" />
+    <resource>
+      <Organization>
+        <id value="bf7a76d3-5b44-4194-a9e0-d1cc1ea5e50e" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+        </meta>
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+          <value value="D82015" />
+        </identifier>
+        <name value="LINGFIELD ROYAL INFIRMARY" />
+        <address>
+          <line value="HEIGHTS LANE" />
+          <city value="BRADFORD" />
+          <district value="WEST YORKSHIRE" />
+          <postalCode value="BD9 6DP" />
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:aa710162-89f5-48c3-80f0-8c2c70311690" />
+    <resource>
+      <Organization>
+        <id value="aa710162-89f5-48c3-80f0-8c2c70311690" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+        </meta>
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+          <value value="RGD12" />
+        </identifier>
+        <name value="LINGFIELD ROYAL INFIRMARY" />
+        <address>
+          <line value="HEIGHTS LANE" />
+          <city value="BRADFORD" />
+          <district value="WEST YORKSHIRE" />
+          <postalCode value="BD9 6DP" />
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+    <resource>
+      <Patient>
+        <id value="8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1" />
+        </meta>
+        <identifier>
+          <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+            <valueCodeableConcept>
+              <coding>
+                <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" />
+                <code value="01" />
+                <display value="Number present and verified" />
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <system value="https://fhir.nhs.uk/Id/nhs-number" />
+          <value value="9432003812" />
+        </identifier>
+        <name>
+          <use value="official" />
+          <family value="KAY" />
+          <given value="Michael" />
+        </name>
+        <gender value="female" />
+        <birthDate value="1961-01-03" />
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:a4409d7c-b613-477c-b623-87e60406c2f0" />
+    <resource>
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="d9df1431-22ac-462a-946a-f195f6c639af" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="7e9bbd01-4e52-420d-b05b-48bc671d6708" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="19518008" />
+            <display value="Protein measurement, urine, quantitative 24 hour (procedure)" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+          <display value="KAY, Michael" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:bf7a76d3-5b44-4194-a9e0-d1cc1ea5e50e" />
+            <display value="Dr Ibrahim Khan" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:aa710162-89f5-48c3-80f0-8c2c70311690" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+</Bundle>

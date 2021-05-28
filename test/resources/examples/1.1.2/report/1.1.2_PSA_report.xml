@@ -118,7 +118,7 @@
       <Practitioner>
         <id value="f25e9d63-6a4e-4de6-b9dc-c912fda62b01" />
         <meta>
-          <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Practitioner-1" />
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1" />
         </meta>
         <!--where to store national code for GP ??-->
         <identifier>
@@ -138,7 +138,7 @@
       <Patient>
         <id value="8d6c2cd5-0eec-496a-88d0-3785a135df09" />
         <meta>
-          <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Patient-1" />
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1" />
         </meta>
         <identifier>
           <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
@@ -169,7 +169,7 @@
       <ProcedureRequest>
         <id value="d9df1431-22ac-462a-946a-f195f6c639af" />
         <meta>
-          <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />
@@ -210,7 +210,7 @@
       <DiagnosticReport xmlns="http://hl7.org/fhir">
         <id value="efae5859-28df-4e7d-be91-6df56d8215e4" />
         <meta>
-          <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1" />
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1" />
         </meta>
         <!--Test Request Summary-->
         <basedOn>
@@ -250,7 +250,7 @@
       <Specimen>
         <id value="756a8361-79ce-4561-afcb-a91fe19df123" />
         <meta>
-          <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Specimen-1" />
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />
@@ -285,7 +285,7 @@
       <Observation>
         <id value="dacb177a-9501-4dcc-8b22-b941791ae0db" />
         <meta>
-          <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />
