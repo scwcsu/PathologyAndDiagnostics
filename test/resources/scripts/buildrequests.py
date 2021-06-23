@@ -141,7 +141,7 @@ def build():
         
         bundle = build_bundle(bundle_uuid,uuid.uuid4(),
                             header,message_header_uuid,
-                            requester,request_uuid,
+                            requester,requester_uuid,
                             performer,performer_uuid,
                             patient,patient_uuid,
                             request,request_uuid)
