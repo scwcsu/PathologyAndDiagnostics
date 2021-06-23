@@ -1,5 +1,5 @@
 <Patient>
-    <id value="8d6c2cd5-0eec-496a-88d0-3785a135df09" />
+    <id value="{{ patient_uuid }}" />
     <meta>
       <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1" />
     </meta>
@@ -14,13 +14,13 @@
         </valueCodeableConcept>
       </extension>
       <system value="https://fhir.nhs.uk/Id/nhs-number" />
-      <value value="9432003812" />
+      <value value="{{ nhs_number }}" />
     </identifier>
     <name>
       <use value="official" />
-      <family value="KAY" />
-      <given value="Michael" />
+      <family value="{{ family_name }}" />
+      <given value="{{ given_name }}" />
     </name>
-    <gender value="female" />
-    <birthDate value="1961-01-03" />
+    <gender value="{{ gender }}" />
+    <birthDate value="{{ birthdate }}" />
 </Patient>

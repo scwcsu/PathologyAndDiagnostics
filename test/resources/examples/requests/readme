@@ -1,0 +1,3 @@
+This folder contains a set of requests for each test scneario.
+These requests are generated using the script buildrequests.py using the data 
+and templates in the templates folder.

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="069cfe69-2620-4b89-a8c7-7c1d08434214" />
+  <identifier>
+    <system value="https://tools.ietf.org/html/rfc4122" />
+    <value value="fbe9c724-07f7-4455-8a2a-972e896a944e" />
+  </identifier>
+  <type value="message" />
+  <entry>
+    <fullUrl value="urn:uuid:8372e1a3-4b0f-4b13-b34e-615fab0f87d7" />
+    <resource>
+            <MessageHeader>
+        <id value="8372e1a3-4b0f-4b13-b34e-615fab0f87d7" />
+        <event>
+          <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2" />
+          <code value="ITK012M" />
+          <display value="ITK National Pathology" />
+        </event>
+        <receiver>
+          <reference value="urn:uuid:d38f174f-1bc9-4752-b866-91a3a85030e5" />
+        </receiver>
+        <sender>
+          <reference value="urn:uuid:bf2f7c5b-bf44-4138-a3a9-d9060f48f88a" />
+        </sender>
+        <timestamp value="2019-03-14T10:10:16+00:00" />
+        <source>
+          <endpoint value="NOROT003" />
+        </source>
+        <focus>
+          <reference value="urn:uuid:d80e5179-3177-4be4-88ed-94eefd3d27e5" />
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:d80e5179-3177-4be4-88ed-94eefd3d27e5" />
+    <resource>
+      <Organization>
+    <id value="bf2f7c5b-bf44-4138-a3a9-d9060f48f88a" />
+    <meta>
+      <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+    </meta>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+      <value value="M112" />
+    </identifier>
+    <name value="Manor GP Practice " />
+    <address>
+      <line value="Manor Lane" />
+      <city value="Leeds" />
+      <district value="Leeds" />
+      <postalCode value="LE1 1GP" />
+    </address>
+  </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:d38f174f-1bc9-4752-b866-91a3a85030e5" />
+    <resource>
+      <Organization>
+    <id value="d38f174f-1bc9-4752-b866-91a3a85030e5" />
+    <meta>
+      <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+    </meta>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+      <value value="D82015" />
+    </identifier>
+    <name value="Lingfield Royal Infirmary (Blood Sciences)" />
+    <address>
+      <line value="Lab Street" />
+      <city value="Linfield" />
+      <district value="Surrey" />
+      <postalCode value="LI1 1LB" />
+    </address>
+  </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:7a85be26-dd70-442e-8e08-ad536b67f1be" />
+    <resource>
+      <Patient>
+    <id value="7a85be26-dd70-442e-8e08-ad536b67f1be" />
+    <meta>
+      <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1" />
+    </meta>
+    <identifier>
+      <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" />
+            <code value="01" />
+            <display value="Number present and verified" />
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <system value="https://fhir.nhs.uk/Id/nhs-number" />
+      <value value="9449306613" />
+    </identifier>
+    <name>
+      <use value="official" />
+      <family value="Stanner" />
+      <given value="Lisa" />
+    </name>
+    <gender value="Female" />
+    <birthDate value="15/04/1961" />
+</Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:d80e5179-3177-4be4-88ed-94eefd3d27e5" />
+    <resource>
+            <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="d80e5179-3177-4be4-88ed-94eefd3d27e5" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="b4f0652a-7385-46e2-aa99-791638d43449" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="444164000" />
+            <display value="Urea, electrolytes and creatinine measurement" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:7a85be26-dd70-442e-8e08-ad536b67f1be" />
+          <display value="Stanner,Lisa" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:bf2f7c5b-bf44-4138-a3a9-d9060f48f88a" />
+            <display value="Manor GP Practice " />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:d38f174f-1bc9-4752-b866-91a3a85030e5" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+</Bundle>

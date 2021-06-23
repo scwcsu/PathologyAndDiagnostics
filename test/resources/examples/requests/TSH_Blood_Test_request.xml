@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="419bc8eb-1427-46d7-b141-8cb9271d0f5b" />
+  <identifier>
+    <system value="https://tools.ietf.org/html/rfc4122" />
+    <value value="14a352e0-71b5-4a57-b867-102addd298a0" />
+  </identifier>
+  <type value="message" />
+  <entry>
+    <fullUrl value="urn:uuid:e3572d55-0c80-41fb-8947-e95260816e33" />
+    <resource>
+            <MessageHeader>
+        <id value="e3572d55-0c80-41fb-8947-e95260816e33" />
+        <event>
+          <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2" />
+          <code value="ITK012M" />
+          <display value="ITK National Pathology" />
+        </event>
+        <receiver>
+          <reference value="urn:uuid:b222cfe5-e6d8-4f63-ac2b-678e70222929" />
+        </receiver>
+        <sender>
+          <reference value="urn:uuid:06bf9875-b618-4f52-96a3-7a0e579c95f3" />
+        </sender>
+        <timestamp value="2019-03-14T10:10:16+00:00" />
+        <source>
+          <endpoint value="NOROT003" />
+        </source>
+        <focus>
+          <reference value="urn:uuid:6041b6da-af85-4cfd-8d6d-0d52fc625e05" />
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:6041b6da-af85-4cfd-8d6d-0d52fc625e05" />
+    <resource>
+      <Organization>
+    <id value="06bf9875-b618-4f52-96a3-7a0e579c95f3" />
+    <meta>
+      <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+    </meta>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+      <value value="L823" />
+    </identifier>
+    <name value="Green Lane Medical Centre" />
+    <address>
+      <line value="Primary Road" />
+      <city value="Greenham" />
+      <district value="Bridgwater" />
+      <postalCode value="BW1 1GP" />
+    </address>
+  </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:b222cfe5-e6d8-4f63-ac2b-678e70222929" />
+    <resource>
+      <Organization>
+    <id value="b222cfe5-e6d8-4f63-ac2b-678e70222929" />
+    <meta>
+      <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+    </meta>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+      <value value="D82015" />
+    </identifier>
+    <name value="Lingfield Royal Infirmary (Blood Sciences)" />
+    <address>
+      <line value="Lab Street" />
+      <city value="Linfield" />
+      <district value="Surrey" />
+      <postalCode value="LI1 1LB" />
+    </address>
+  </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:d46c3603-b862-4426-8ec3-885bb98f4936" />
+    <resource>
+      <Patient>
+    <id value="d46c3603-b862-4426-8ec3-885bb98f4936" />
+    <meta>
+      <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1" />
+    </meta>
+    <identifier>
+      <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" />
+            <code value="01" />
+            <display value="Number present and verified" />
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <system value="https://fhir.nhs.uk/Id/nhs-number" />
+      <value value="9449305552" />
+    </identifier>
+    <name>
+      <use value="official" />
+      <family value="Brown" />
+      <given value="Anne" />
+    </name>
+    <gender value="Female" />
+    <birthDate value="15/04/1961" />
+</Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:6041b6da-af85-4cfd-8d6d-0d52fc625e05" />
+    <resource>
+            <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="6041b6da-af85-4cfd-8d6d-0d52fc625e05" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="37846711-0105-4d16-af70-225cd4c8fad7" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="61167004" />
+            <display value="Thyroid stimulating hormone measurement" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:d46c3603-b862-4426-8ec3-885bb98f4936" />
+          <display value="Brown,Anne" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:06bf9875-b618-4f52-96a3-7a0e579c95f3" />
+            <display value="Green Lane Medical Centre" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:b222cfe5-e6d8-4f63-ac2b-678e70222929" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+</Bundle>

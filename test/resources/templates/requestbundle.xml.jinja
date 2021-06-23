@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="{{ bundle_uuid }}" />
+  <identifier>
+    <system value="https://tools.ietf.org/html/rfc4122" />
+    <value value="{{ bundle_identifier }}" />
+  </identifier>
+  <type value="message" />
+  <entry>
+    <fullUrl value="urn:uuid:{{ message_header_uuid }}" />
+    <resource>
+      {{ message_header_resource }}
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:{{ requester_uuid }}" />
+    <resource>
+      {{ requester_resource }}
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:{{ performer_uuid }}" />
+    <resource>
+      {{ performer_resource }}
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:{{ patient_uuid }}" />
+    <resource>
+      {{ patient_resource }}
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:{{ request_uuid }}" />
+    <resource>
+      {{ procedure_request_resource }}
+    </resource>
+  </entry>
+</Bundle>

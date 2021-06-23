@@ -1,0 +1,35 @@
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="{{ request_uuid }}" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="{{ request_identifier }}" />
+        </identifier>
+        <status value="{{ request_status }}" />
+        <intent value="order" />
+        <priority value="routine" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="{{ request_utl_code }}" />
+            <display value="{{ request_utl_display }}" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:{{ patient_uuid }}" />
+          <display value="{{ patient_display }}" />
+        </subject>
+        <authoredOn value="{{ authored_on }}" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:{{ requester_agent_uuid }}" />
+            <display value="{{ requester_agent_display }}" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:{{ performer_uuid }}" />
+          <display value="{{ performer_display }}" />
+        </performer>
+      </ProcedureRequest>
