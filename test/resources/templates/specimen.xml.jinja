@@ -1,0 +1,30 @@
+      <Specimen>
+        <id value="{{ specimen_uuid }}" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="{{ specimen_identifier }}" />
+        </identifier>
+        <status value="{{ status }}" />
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="{{ code }}" />
+            <display value="{{ display }}" />
+          </coding>
+        </type>
+        <subject>
+          <reference value="urn:uuid:{{ patient_uuid }}" />
+          <display value="{{ patient_display }}" />
+        </subject>
+        <receivedTime value="{{ received_time }}" />
+        <collection>
+          <collectedDateTime value="{{ collected_time }}" />
+          <quantity>
+            <value value="{{ quantity_value }}" />
+            <unit value="{{ quanity_unit }}" />
+          </quantity>
+        </collection>
+      </Specimen>
