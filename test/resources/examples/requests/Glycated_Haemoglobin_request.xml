@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="0686dee0-a498-4baf-b1e3-9c24340237c9" />
+  <id value="4490f5a1-1f0d-49d1-825e-ad46cb93c97a" />
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />
-    <value value="c802270f-b248-4ce3-aa51-e8f58525e5d1" />
+    <value value="c020293c-8a9d-4af1-baa1-14a47ce6a7ab" />
   </identifier>
   <type value="message" />
   <entry>
-    <fullUrl value="urn:uuid:9dd47c39-45f9-49ed-ae37-a1e944ada9b0" />
+    <fullUrl value="urn:uuid:a005e207-c669-4c8d-b2df-96699a33a523" />
     <resource>
             <MessageHeader>
-        <id value="9dd47c39-45f9-49ed-ae37-a1e944ada9b0" />
+        <id value="a005e207-c669-4c8d-b2df-96699a33a523" />
         <event>
           <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2" />
           <code value="ITK012M" />
           <display value="ITK National Pathology" />
         </event>
         <receiver>
-          <reference value="urn:uuid:022c52a1-7409-4b29-8a38-ef61550d29ad" />
+          <reference value="urn:uuid:79c8fe29-ee17-48fb-a6cf-b01a694c9a5b" />
         </receiver>
         <sender>
-          <reference value="urn:uuid:5779ca30-c931-4f50-a1cd-be95ca13e472" />
+          <reference value="urn:uuid:31008d11-4997-4ba8-b432-70815f84b839" />
         </sender>
         <timestamp value="2019-03-14T10:10:16+00:00" />
         <source>
           <endpoint value="NOROT003" />
         </source>
         <focus>
-          <reference value="urn:uuid:6b0edb3d-0e4c-46c2-92c9-464002ae156c" />
+          <reference value="urn:uuid:07a1db66-7a1c-4cef-8e94-980b754ffdc3" />
         </focus>
       </MessageHeader>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:5779ca30-c931-4f50-a1cd-be95ca13e472" />
+    <fullUrl value="urn:uuid:31008d11-4997-4ba8-b432-70815f84b839" />
     <resource>
       <Organization>
-    <id value="5779ca30-c931-4f50-a1cd-be95ca13e472" />
+    <id value="31008d11-4997-4ba8-b432-70815f84b839" />
     <meta>
       <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
     </meta>
@@ -55,10 +55,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:022c52a1-7409-4b29-8a38-ef61550d29ad" />
+    <fullUrl value="urn:uuid:79c8fe29-ee17-48fb-a6cf-b01a694c9a5b" />
     <resource>
       <Organization>
-    <id value="022c52a1-7409-4b29-8a38-ef61550d29ad" />
+    <id value="79c8fe29-ee17-48fb-a6cf-b01a694c9a5b" />
     <meta>
       <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
     </meta>
@@ -77,10 +77,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:43b65705-6379-4c12-b02a-8bf1dc2d450f" />
+    <fullUrl value="urn:uuid:4319f5fe-21f2-442d-9c2c-f82d1b61b38a" />
     <resource>
       <Patient>
-    <id value="43b65705-6379-4c12-b02a-8bf1dc2d450f" />
+    <id value="4319f5fe-21f2-442d-9c2c-f82d1b61b38a" />
     <meta>
       <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1" />
     </meta>
@@ -108,40 +108,45 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:6b0edb3d-0e4c-46c2-92c9-464002ae156c" />
+    <fullUrl value="urn:uuid:07a1db66-7a1c-4cef-8e94-980b754ffdc3" />
     <resource>
             <ProcedureRequest xmlns="http://hl7.org/fhir">
-        <id value="6b0edb3d-0e4c-46c2-92c9-464002ae156c" />
+        <id value="07a1db66-7a1c-4cef-8e94-980b754ffdc3" />
         <meta>
           <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />
-          <value value="979409ff-ead4-426c-b718-cc3d429e93ef" />
+          <value value="4fbfcb33-f9dc-4856-8d49-800f159e88e8" />
         </identifier>
         <status value="active" />
         <intent value="order" />
         <priority value="routine" />
         <code>
           <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="433612018"/>
+              </extension>
+            </extension>
             <system value="http://snomed.info/sct" />
             <code value="117346004" />
             <display value="Glucose measurement estimated from glycated haemoglobin" />
           </coding>
         </code>
         <subject>
-          <reference value="urn:uuid:43b65705-6379-4c12-b02a-8bf1dc2d450f" />
+          <reference value="urn:uuid:4319f5fe-21f2-442d-9c2c-f82d1b61b38a" />
           <display value="Alan,Susan" />
         </subject>
         <authoredOn value="2019-06-04" />
         <requester>
           <agent>
-            <reference value="urn:uuid:5779ca30-c931-4f50-a1cd-be95ca13e472" />
+            <reference value="urn:uuid:31008d11-4997-4ba8-b432-70815f84b839" />
             <display value=" Oldhampton Royal Infirmary" />
           </agent>
         </requester>
         <performer>
-          <reference value="urn:uuid:022c52a1-7409-4b29-8a38-ef61550d29ad" />
+          <reference value="urn:uuid:79c8fe29-ee17-48fb-a6cf-b01a694c9a5b" />
           <display value="Lingfield Royal Infirmary (Blood Sciences)" />
         </performer>
       </ProcedureRequest>
