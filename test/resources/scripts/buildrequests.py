@@ -58,7 +58,7 @@ def build_requester(uuid,identifier,name,address,city,district,postcode):
     return requester
 
 def build_request(uuid,identifier,status,request_utl_code,request_utl_display,patient_uuid,patient_display,
-            authored_on,requester_uuid,requester_display,performer_uuid,performer_display):
+            authored_on,requester_uuid,requester_display,performer_uuid,performer_display,request_utl_display_code):
 
     request = request_template.render(request_uuid=uuid,
                                         request_identifier=identifier,
@@ -71,7 +71,8 @@ def build_request(uuid,identifier,status,request_utl_code,request_utl_display,pa
                                         requester_agent_uuid=requester_uuid,
                                         requester_agent_display=requester_display,
                                         performer_uuid=performer_uuid,
-                                        performer_display=performer_display)
+                                        performer_display=performer_display,
+                                        request_utl_display_code=request_utl_display_code)
     return request
 
 def build_message_header(uuid,receiver_uuid,sender_uuid,timestamp,endpoint,focus_uuid):
@@ -135,7 +136,8 @@ def build():
                                 requester_uuid,
                                 record["Requester Org"],
                                 performer_uuid,
-                                record["Performer Org"])
+                                record["Performer Org"],
+                                record["DisplayCode"])
         header = build_message_header(message_header_uuid,performer_uuid,requester_uuid,
                                 "2019-03-14T10:10:16+00:00","NOROT003",request_uuid)
         
