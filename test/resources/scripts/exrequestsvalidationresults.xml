@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <type value="collection"/>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+                <td>
+                  <b>Source</b>
+                </td>
+              </tr>
+              <tr>
+                <td>ERROR</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid is not allowed to be used at this point (allowed = e:Encounter, e:Condition, e:Observation, e:Flag, e:Immunization, e:AllergyIntolerance, e:FamilyMemberHistory, e:MedicationRequest, e:MedicationStatement, e:Procedure, e:Medication, e:DiagnosticReport, e:Specimen, e:ProcedureRequest, e:MedicationAdministration; this element is [[Bundle.entry.resource.ofType(ProcedureRequest).code.coding, BackboneElement.resource.code.coding, ProcedureRequest.code.coding, CodeableConcept.coding, Coding])</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>ERROR</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>Extension.extension:descriptionDisplay: minimum required = 1, but only found 0 (from https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="./../examples/requests/Cholesterol_and_Triglycerides_request.xml"/>
+        </extension>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="126"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="19"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueCode value="InstanceValidator"/>
+          </extension>
+          <severity value="error"/>
+          <code value="structure"/>
+          <details>
+            <text value="The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid is not allowed to be used at this point (allowed = e:Encounter, e:Condition, e:Observation, e:Flag, e:Immunization, e:AllergyIntolerance, e:FamilyMemberHistory, e:MedicationRequest, e:MedicationStatement, e:Procedure, e:Medication, e:DiagnosticReport, e:Specimen, e:ProcedureRequest, e:MedicationAdministration; this element is [[Bundle.entry.resource.ofType(ProcedureRequest).code.coding, BackboneElement.resource.code.coding, ProcedureRequest.code.coding, CodeableConcept.coding, Coding])"/>
+          </details>
+          <expression value="Bundle.entry[4].resource.ofType(ProcedureRequest).code.coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="127"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="106"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueCode value="InstanceValidator"/>
+          </extension>
+          <severity value="error"/>
+          <code value="structure"/>
+          <details>
+            <text value="Extension.extension:descriptionDisplay: minimum required = 1, but only found 0 (from https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid)"/>
+          </details>
+          <expression value="Bundle.entry[4].resource.ofType(ProcedureRequest).code.coding[0].extension[0]"/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+                <td>
+                  <b>Source</b>
+                </td>
+              </tr>
+              <tr>
+                <td>ERROR</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid is not allowed to be used at this point (allowed = e:Encounter, e:Condition, e:Observation, e:Flag, e:Immunization, e:AllergyIntolerance, e:FamilyMemberHistory, e:MedicationRequest, e:MedicationStatement, e:Procedure, e:Medication, e:DiagnosticReport, e:Specimen, e:ProcedureRequest, e:MedicationAdministration; this element is [[Bundle.entry.resource.ofType(ProcedureRequest).code.coding, BackboneElement.resource.code.coding, ProcedureRequest.code.coding, CodeableConcept.coding, Coding])</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>ERROR</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>Extension.extension:descriptionDisplay: minimum required = 1, but only found 0 (from https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="./../examples/requests/Electrolytes_and_Creatinine_request.xml"/>
+        </extension>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="126"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="19"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueCode value="InstanceValidator"/>
+          </extension>
+          <severity value="error"/>
+          <code value="structure"/>
+          <details>
+            <text value="The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid is not allowed to be used at this point (allowed = e:Encounter, e:Condition, e:Observation, e:Flag, e:Immunization, e:AllergyIntolerance, e:FamilyMemberHistory, e:MedicationRequest, e:MedicationStatement, e:Procedure, e:Medication, e:DiagnosticReport, e:Specimen, e:ProcedureRequest, e:MedicationAdministration; this element is [[Bundle.entry.resource.ofType(ProcedureRequest).code.coding, BackboneElement.resource.code.coding, ProcedureRequest.code.coding, CodeableConcept.coding, Coding])"/>
+          </details>
+          <expression value="Bundle.entry[4].resource.ofType(ProcedureRequest).code.coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="127"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="106"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueCode value="InstanceValidator"/>
+          </extension>
+          <severity value="error"/>
+          <code value="structure"/>
+          <details>
+            <text value="Extension.extension:descriptionDisplay: minimum required = 1, but only found 0 (from https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid)"/>
+          </details>
+          <expression value="Bundle.entry[4].resource.ofType(ProcedureRequest).code.coding[0].extension[0]"/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+                <td>
+                  <b>Source</b>
+                </td>
+              </tr>
+              <tr>
+                <td>ERROR</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid is not allowed to be used at this point (allowed = e:Encounter, e:Condition, e:Observation, e:Flag, e:Immunization, e:AllergyIntolerance, e:FamilyMemberHistory, e:MedicationRequest, e:MedicationStatement, e:Procedure, e:Medication, e:DiagnosticReport, e:Specimen, e:ProcedureRequest, e:MedicationAdministration; this element is [[Bundle.entry.resource.ofType(ProcedureRequest).code.coding, BackboneElement.resource.code.coding, ProcedureRequest.code.coding, CodeableConcept.coding, Coding])</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>ERROR</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>Extension.extension:descriptionDisplay: minimum required = 1, but only found 0 (from https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="./../examples/requests/Full_Blood_Count_request.xml"/>
+        </extension>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="126"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="19"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueCode value="InstanceValidator"/>
+          </extension>
+          <severity value="error"/>
+          <code value="structure"/>
+          <details>
+            <text value="The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid is not allowed to be used at this point (allowed = e:Encounter, e:Condition, e:Observation, e:Flag, e:Immunization, e:AllergyIntolerance, e:FamilyMemberHistory, e:MedicationRequest, e:MedicationStatement, e:Procedure, e:Medication, e:DiagnosticReport, e:Specimen, e:ProcedureRequest, e:MedicationAdministration; this element is [[Bundle.entry.resource.ofType(ProcedureRequest).code.coding, BackboneElement.resource.code.coding, ProcedureRequest.code.coding, CodeableConcept.coding, Coding])"/>
+          </details>
+          <expression value="Bundle.entry[4].resource.ofType(ProcedureRequest).code.coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="127"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="106"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueCode value="InstanceValidator"/>
+          </extension>
+          <severity value="error"/>
+          <code value="structure"/>
+          <details>
+            <text value="Extension.extension:descriptionDisplay: minimum required = 1, but only found 0 (from https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid)"/>
+          </details>
+          <expression value="Bundle.entry[4].resource.ofType(ProcedureRequest).code.coding[0].extension[0]"/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+                <td>
+                  <b>Source</b>
+                </td>
+              </tr>
+              <tr>
+                <td>ERROR</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid is not allowed to be used at this point (allowed = e:Encounter, e:Condition, e:Observation, e:Flag, e:Immunization, e:AllergyIntolerance, e:FamilyMemberHistory, e:MedicationRequest, e:MedicationStatement, e:Procedure, e:Medication, e:DiagnosticReport, e:Specimen, e:ProcedureRequest, e:MedicationAdministration; this element is [[Bundle.entry.resource.ofType(ProcedureRequest).code.coding, BackboneElement.resource.code.coding, ProcedureRequest.code.coding, CodeableConcept.coding, Coding])</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>ERROR</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>Extension.extension:descriptionDisplay: minimum required = 1, but only found 0 (from https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="./../examples/requests/Glycated_Haemoglobin_request.xml"/>
+        </extension>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="126"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="19"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueCode value="InstanceValidator"/>
+          </extension>
+          <severity value="error"/>
+          <code value="structure"/>
+          <details>
+            <text value="The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid is not allowed to be used at this point (allowed = e:Encounter, e:Condition, e:Observation, e:Flag, e:Immunization, e:AllergyIntolerance, e:FamilyMemberHistory, e:MedicationRequest, e:MedicationStatement, e:Procedure, e:Medication, e:DiagnosticReport, e:Specimen, e:ProcedureRequest, e:MedicationAdministration; this element is [[Bundle.entry.resource.ofType(ProcedureRequest).code.coding, BackboneElement.resource.code.coding, ProcedureRequest.code.coding, CodeableConcept.coding, Coding])"/>
+          </details>
+          <expression value="Bundle.entry[4].resource.ofType(ProcedureRequest).code.coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="127"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="106"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueCode value="InstanceValidator"/>
+          </extension>
+          <severity value="error"/>
+          <code value="structure"/>
+          <details>
+            <text value="Extension.extension:descriptionDisplay: minimum required = 1, but only found 0 (from https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid)"/>
+          </details>
+          <expression value="Bundle.entry[4].resource.ofType(ProcedureRequest).code.coding[0].extension[0]"/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+                <td>
+                  <b>Source</b>
+                </td>
+              </tr>
+              <tr>
+                <td>ERROR</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid is not allowed to be used at this point (allowed = e:Encounter, e:Condition, e:Observation, e:Flag, e:Immunization, e:AllergyIntolerance, e:FamilyMemberHistory, e:MedicationRequest, e:MedicationStatement, e:Procedure, e:Medication, e:DiagnosticReport, e:Specimen, e:ProcedureRequest, e:MedicationAdministration; this element is [[Bundle.entry.resource.ofType(ProcedureRequest).code.coding, BackboneElement.resource.code.coding, ProcedureRequest.code.coding, CodeableConcept.coding, Coding])</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>ERROR</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>Extension.extension:descriptionDisplay: minimum required = 1, but only found 0 (from https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="./../examples/requests/PSA_Antigen_Test_request.xml"/>
+        </extension>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="126"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="19"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueCode value="InstanceValidator"/>
+          </extension>
+          <severity value="error"/>
+          <code value="structure"/>
+          <details>
+            <text value="The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid is not allowed to be used at this point (allowed = e:Encounter, e:Condition, e:Observation, e:Flag, e:Immunization, e:AllergyIntolerance, e:FamilyMemberHistory, e:MedicationRequest, e:MedicationStatement, e:Procedure, e:Medication, e:DiagnosticReport, e:Specimen, e:ProcedureRequest, e:MedicationAdministration; this element is [[Bundle.entry.resource.ofType(ProcedureRequest).code.coding, BackboneElement.resource.code.coding, ProcedureRequest.code.coding, CodeableConcept.coding, Coding])"/>
+          </details>
+          <expression value="Bundle.entry[4].resource.ofType(ProcedureRequest).code.coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="127"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="106"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueCode value="InstanceValidator"/>
+          </extension>
+          <severity value="error"/>
+          <code value="structure"/>
+          <details>
+            <text value="Extension.extension:descriptionDisplay: minimum required = 1, but only found 0 (from https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid)"/>
+          </details>
+          <expression value="Bundle.entry[4].resource.ofType(ProcedureRequest).code.coding[0].extension[0]"/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+                <td>
+                  <b>Source</b>
+                </td>
+              </tr>
+              <tr>
+                <td>ERROR</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid is not allowed to be used at this point (allowed = e:Encounter, e:Condition, e:Observation, e:Flag, e:Immunization, e:AllergyIntolerance, e:FamilyMemberHistory, e:MedicationRequest, e:MedicationStatement, e:Procedure, e:Medication, e:DiagnosticReport, e:Specimen, e:ProcedureRequest, e:MedicationAdministration; this element is [[Bundle.entry.resource.ofType(ProcedureRequest).code.coding, BackboneElement.resource.code.coding, ProcedureRequest.code.coding, CodeableConcept.coding, Coding])</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>ERROR</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>Extension.extension:descriptionDisplay: minimum required = 1, but only found 0 (from https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="./../examples/requests/TSH_Blood_Test_request.xml"/>
+        </extension>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="126"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="19"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueCode value="InstanceValidator"/>
+          </extension>
+          <severity value="error"/>
+          <code value="structure"/>
+          <details>
+            <text value="The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid is not allowed to be used at this point (allowed = e:Encounter, e:Condition, e:Observation, e:Flag, e:Immunization, e:AllergyIntolerance, e:FamilyMemberHistory, e:MedicationRequest, e:MedicationStatement, e:Procedure, e:Medication, e:DiagnosticReport, e:Specimen, e:ProcedureRequest, e:MedicationAdministration; this element is [[Bundle.entry.resource.ofType(ProcedureRequest).code.coding, BackboneElement.resource.code.coding, ProcedureRequest.code.coding, CodeableConcept.coding, Coding])"/>
+          </details>
+          <expression value="Bundle.entry[4].resource.ofType(ProcedureRequest).code.coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="127"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="106"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueCode value="InstanceValidator"/>
+          </extension>
+          <severity value="error"/>
+          <code value="structure"/>
+          <details>
+            <text value="Extension.extension:descriptionDisplay: minimum required = 1, but only found 0 (from https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid)"/>
+          </details>
+          <expression value="Bundle.entry[4].resource.ofType(ProcedureRequest).code.coding[0].extension[0]"/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+                <td>
+                  <b>Source</b>
+                </td>
+              </tr>
+              <tr>
+                <td>ERROR</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid is not allowed to be used at this point (allowed = e:Encounter, e:Condition, e:Observation, e:Flag, e:Immunization, e:AllergyIntolerance, e:FamilyMemberHistory, e:MedicationRequest, e:MedicationStatement, e:Procedure, e:Medication, e:DiagnosticReport, e:Specimen, e:ProcedureRequest, e:MedicationAdministration; this element is [[Bundle.entry.resource.ofType(ProcedureRequest).code.coding, BackboneElement.resource.code.coding, ProcedureRequest.code.coding, CodeableConcept.coding, Coding])</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>ERROR</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>Extension.extension:descriptionDisplay: minimum required = 1, but only found 0 (from https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="./../examples/requests/Urine_Albumin_request.xml"/>
+        </extension>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="126"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="19"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueCode value="InstanceValidator"/>
+          </extension>
+          <severity value="error"/>
+          <code value="structure"/>
+          <details>
+            <text value="The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid is not allowed to be used at this point (allowed = e:Encounter, e:Condition, e:Observation, e:Flag, e:Immunization, e:AllergyIntolerance, e:FamilyMemberHistory, e:MedicationRequest, e:MedicationStatement, e:Procedure, e:Medication, e:DiagnosticReport, e:Specimen, e:ProcedureRequest, e:MedicationAdministration; this element is [[Bundle.entry.resource.ofType(ProcedureRequest).code.coding, BackboneElement.resource.code.coding, ProcedureRequest.code.coding, CodeableConcept.coding, Coding])"/>
+          </details>
+          <expression value="Bundle.entry[4].resource.ofType(ProcedureRequest).code.coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="127"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="106"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueCode value="InstanceValidator"/>
+          </extension>
+          <severity value="error"/>
+          <code value="structure"/>
+          <details>
+            <text value="Extension.extension:descriptionDisplay: minimum required = 1, but only found 0 (from https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid)"/>
+          </details>
+          <expression value="Bundle.entry[4].resource.ofType(ProcedureRequest).code.coding[0].extension[0]"/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+</Bundle>
