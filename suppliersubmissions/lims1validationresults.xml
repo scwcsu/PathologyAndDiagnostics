@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OperationOutcome xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="extensions"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>All OK</p>
+      <table class="grid">
+        <tr>
+          <td>
+            <b>Severity</b>
+          </td>
+          <td>
+            <b>Location</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Details</b>
+          </td>
+          <td>
+            <b>Diagnostics</b>
+          </td>
+          <td>
+            <b>Source</b>
+          </td>
+        </tr>
+        <tr>
+          <td>INFORMATION</td>
+          <td/>
+          <td>Invalid Code</td>
+          <td>None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/report-codes (http://hl7.org/fhir/ValueSet/report-codes), and a coding is recommended to come from this value set) (codes = http://snomed.info/sct#721981007)</td>
+          <td/>
+          <td>No display for Extension</td>
+        </tr>
+        <tr>
+          <td>INFORMATION</td>
+          <td/>
+          <td>Invalid Code</td>
+          <td>The value provided could not be validated in the absence of a terminology server</td>
+          <td/>
+          <td>No display for Extension</td>
+        </tr>
+        <tr>
+          <td>INFORMATION</td>
+          <td/>
+          <td>Invalid Code</td>
+          <td>The value provided could not be validated in the absence of a terminology server</td>
+          <td/>
+          <td>No display for Extension</td>
+        </tr>
+        <tr>
+          <td>INFORMATION</td>
+          <td/>
+          <td>Invalid Code</td>
+          <td>The value provided could not be validated in the absence of a terminology server</td>
+          <td/>
+          <td>No display for Extension</td>
+        </tr>
+        <tr>
+          <td>INFORMATION</td>
+          <td/>
+          <td>Invalid Code</td>
+          <td>None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/observation-category (http://hl7.org/fhir/ValueSet/observation-category), and a coding is recommended to come from this value set) (codes = http://snomed.info/sct#394595002)</td>
+          <td/>
+          <td>No display for Extension</td>
+        </tr>
+        <tr>
+          <td>INFORMATION</td>
+          <td/>
+          <td>Invalid Code</td>
+          <td>The value provided could not be validated in the absence of a terminology server</td>
+          <td/>
+          <td>No display for Extension</td>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+    <valueString value="./../../../suppliersubmissions/lims1/1.1.1_PSA_Report_Message_Bundle.1.xml"/>
+  </extension>
+  <issue>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+      <valueInteger value="192"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+      <valueInteger value="11"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+      <valueCode value="TerminologyEngine"/>
+    </extension>
+    <severity value="information"/>
+    <code value="code-invalid"/>
+    <details>
+      <text value="None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/report-codes (http://hl7.org/fhir/ValueSet/report-codes), and a coding is recommended to come from this value set) (codes = http://snomed.info/sct#721981007)"/>
+    </details>
+    <expression value="Bundle.entry[6].resource.ofType(DiagnosticReport).code"/>
+  </issue>
+  <issue>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+      <valueInteger value="193"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+      <valueInteger value="14"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+      <valueCode value="TerminologyEngine"/>
+    </extension>
+    <severity value="information"/>
+    <code value="code-invalid"/>
+    <details>
+      <text value="The value provided could not be validated in the absence of a terminology server"/>
+    </details>
+    <expression value="Bundle.entry[6].resource.ofType(DiagnosticReport).code.coding[0]"/>
+  </issue>
+  <issue>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+      <valueInteger value="218"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+      <valueInteger value="14"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+      <valueCode value="TerminologyEngine"/>
+    </extension>
+    <severity value="information"/>
+    <code value="code-invalid"/>
+    <details>
+      <text value="The value provided could not be validated in the absence of a terminology server"/>
+    </details>
+    <expression value="Bundle.entry[6].resource.ofType(DiagnosticReport).codedDiagnosis[0].coding[0]"/>
+  </issue>
+  <issue>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+      <valueInteger value="241"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+      <valueInteger value="14"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+      <valueCode value="TerminologyEngine"/>
+    </extension>
+    <severity value="information"/>
+    <code value="code-invalid"/>
+    <details>
+      <text value="The value provided could not be validated in the absence of a terminology server"/>
+    </details>
+    <expression value="Bundle.entry[7].resource.ofType(Specimen).type.coding[0]"/>
+  </issue>
+  <issue>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+      <valueInteger value="288"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+      <valueInteger value="15"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+      <valueCode value="TerminologyEngine"/>
+    </extension>
+    <severity value="information"/>
+    <code value="code-invalid"/>
+    <details>
+      <text value="None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/observation-category (http://hl7.org/fhir/ValueSet/observation-category), and a coding is recommended to come from this value set) (codes = http://snomed.info/sct#394595002)"/>
+    </details>
+    <expression value="Bundle.entry[8].resource.ofType(Observation).category[0]"/>
+  </issue>
+  <issue>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+      <valueInteger value="296"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+      <valueInteger value="14"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+      <valueCode value="TerminologyEngine"/>
+    </extension>
+    <severity value="information"/>
+    <code value="code-invalid"/>
+    <details>
+      <text value="The value provided could not be validated in the absence of a terminology server"/>
+    </details>
+    <expression value="Bundle.entry[8].resource.ofType(Observation).code.coding[0]"/>
+  </issue>
+</OperationOutcome>

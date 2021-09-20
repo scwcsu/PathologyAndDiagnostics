@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="19ba3b5f-dec3-433b-9a5a-43406e409c57"/>
+	<meta>
+		<lastUpdated value="2019-04-02T19:30:00+00:00"/>
+	</meta>
+	<identifier>
+		<system value="https://tools.ietf.org/html/rfc4122"/>
+		<value value="f36927ef-7703-45ed-b0e5-6ec6723cf0f6"/>
+	</identifier>
+	<type value="message"/>
+	<entry>
+		<fullUrl value="urn:uuid:076c8d9f-db56-4671-9e03-4f493eefce1b"/>
+		<resource>
+			<MessageHeader>
+				<id value="076c8d9f-db56-4671-9e03-4f493eefce1b"/>
+				<event>
+					<system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2"/>
+					<code value="ITK012M"/>
+					<display value="ITK National Pathology"/>
+				</event>
+				<receiver>
+					<reference value="urn:uuid:037ff692-5571-4b0f-9591-fc337fd7aa0e"/>
+				</receiver>
+				<sender>
+					<reference value="urn:uuid:02124c32-ab62-43de-9456-57f55402380f"/>
+				</sender>
+				<timestamp value="2021-08-11T14:10:16+00:00"/>
+				<source>
+					<endpoint value="NOROT003"/>
+				</source>
+				<focus>
+					<reference value="https://cirdan.com/ultra-result-library-code/PSAH"/>
+				</focus>
+			</MessageHeader>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:037ff692-5571-4b0f-9591-fc337fd7aa0e"/>
+		<resource>
+			<Organization>
+				<id value="037ff692-5571-4b0f-9591-fc337fd7aa0e"/>
+				<meta>
+				<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"/>
+				</meta>
+				<identifier>
+					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+					<value value="RGD12"/>
+				</identifier>
+				<name value="Lingfield Royal Infirmary"/>
+				<address>
+					<line value="Infirm Street"/>
+					<city value="Linfield"/>
+					<district value="Surrey"/>
+					<postalCode value="LI1 1ER"/>
+				</address>
+			</Organization>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:02124c32-ab62-43de-9456-57f55402380f"/>
+		<resource>
+			<Organization>
+				<id value="02124c32-ab62-43de-9456-57f55402380f"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"/>
+				</meta>
+				<identifier>
+					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+					<value value="D82015"/>
+				</identifier>
+				<name value="Lingfield Royal Infirmary (Blood Sciences)"/>
+				<address>
+					<line value="Lab Street"/>
+					<city value="Linfield"/>
+					<district value="Surrey"/>
+					<postalCode value="LI1 1LB"/>
+				</address>
+			</Organization>
+		</resource>
+	</entry>
+	<!--Requesting Practitioner-->
+	<entry>
+		<fullUrl value="urn:uuid:f25e9d63-6a4e-4de6-b9dc-c912fda62b01"/>
+		<resource>
+			<Practitioner>
+				<id value="f25e9d63-6a4e-4de6-b9dc-c912fda62b01"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"/>
+				</meta>
+				<identifier>
+					<system value="https://fhir.nhs.uk/Id/sds-user-id"/>
+					<value value="C8040642"/>
+				</identifier>
+				<name>
+					<family value="kahn"/>
+					<given value="Ibrahim"/>
+				</name>
+			</Practitioner>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:9c41a08b-ddc8-4584-bb9a-661e3ec0bdb9"/>
+		<resource>
+			<Patient>
+				<id value="9c41a08b-ddc8-4584-bb9a-661e3ec0bdb9"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"/>
+				</meta>
+				<identifier>
+					<extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1"/>
+								<code value="01"/>
+								<display value="Number present and verified"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+					<value value="9449304424"/>
+				</identifier>
+				<name>
+					<use value="official"/>
+					<family value="Davies"/>
+					<given value="Michael"/>
+				</name>
+				<gender value="male"/>
+				<birthDate value="1905-12-05"/>
+			</Patient>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:23dd363a-f818-4c87-a907-fa897d7097e5"/>
+		<resource>
+			<ProcedureRequest xmlns="http://hl7.org/fhir">
+				<id value="23dd363a-f818-4c87-a907-fa897d7097e5"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"/>
+				</meta>
+				<identifier>
+					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<value value="a9fac38c-9f11-459c-becc-9bc9410cb600"/>
+				</identifier>
+				<status value="active"/>
+				<intent value="order"/>
+				<priority value="routine"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="63476009"/>
+						<display value="Prostate specific antigen measurement"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:9c41a08b-ddc8-4584-bb9a-661e3ec0bdb9"/>
+					<display value="Davies,Michael"/>
+				</subject>
+				<authoredOn value="2019-06-04"/>
+				<requester>
+					<agent>
+						<reference value="urn:uuid:f25e9d63-6a4e-4de6-b9dc-c912fda62b01"/>
+						<display value="Kahn,Ibrahim"/>
+					</agent>
+					<onBehalfOf>
+						<reference value="urn:uuid:037ff692-5571-4b0f-9591-fc337fd7aa0e"/>
+						<display value="Lingfield Royal Infirmary"/>
+					</onBehalfOf>
+				</requester>
+				<performer>
+					<reference value="urn:uuid:02124c32-ab62-43de-9456-57f55402380f"/>
+					<display value="Lingfield Royal Infirmary (Blood Sciences)"/>
+				</performer>
+			</ProcedureRequest>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="https://cirdan.com/ultra-result-library-code/PSAH"/>
+		<resource>
+			<DiagnosticReport xmlns="http://hl7.org/fhir">
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1"/>
+				</meta>
+				<identifier>
+					<system value="https://cirdan.com/ultra-result-library-code/PSAH"/>
+					<value value="PSAH"/>
+				</identifier>
+				<basedOn>
+					<reference value="urn:uuid:23dd363a-f818-4c87-a907-fa897d7097e5"/>
+				</basedOn>
+				<status value="final"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="721981007"/>
+						<display value="Diagnostic studies report"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:9c41a08b-ddc8-4584-bb9a-661e3ec0bdb9"/>
+					<display value="Davies,Michael"/>
+				</subject>
+				<issued value="2021-07-15T15:40:00+00:00"/>
+				<performer>
+					<actor>
+						<reference value="urn:uuid:02124c32-ab62-43de-9456-57f55402380f"/>
+						<display value="Lingfield Royal Infirmary (Blood Sciences)"/>
+					</actor>
+				</performer>								
+				<specimen>
+					<reference value="https://cirdan.com/ultra-specimen-barcode/35372799"/>
+				</specimen>
+				<result>
+					<reference value="https://cirdan.com/ultra-resultp-code/32"/>
+				</result>
+				<conclusion value="Raised prostate specific antigen"/>
+				<codedDiagnosis>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="396152005"/>
+						<display value="Raised prostate specific antigen"/>
+					</coding>
+				</codedDiagnosis>
+			</DiagnosticReport>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="https://cirdan.com/ultra-specimen-barcode/35372799"/>
+		<resource>
+			<Specimen>
+				<id value="35372799"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
+				</meta>
+				<identifier>
+					<system value="https://cirdan.com/ultra-specimen-barcode"/>
+					<value value="35372799"/>
+				</identifier>
+				<status value="available"/>
+				<type>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="67922002"/>
+						<display value="Serum (substance)"/>
+					</coding>
+				</type>
+				<subject>
+					<reference value="urn:uuid:9c41a08b-ddc8-4584-bb9a-661e3ec0bdb9"/>
+					<display value="Davies,Michael"/>
+				</subject>
+				<request>
+					<reference value="urn:uuid:23dd363a-f818-4c87-a907-fa897d7097e5"/>
+				</request>
+				<collection>
+					<collectedDateTime value="2021-07-15T15:31:00+00:00"/>
+					<quantity>
+						<value value="3"/>
+						<unit value="mL"/>
+					</quantity>
+				</collection>
+				<container>
+					<identifier>
+						<system value="https://cirdan.com/ultra-specimen-container-code"/>
+						<value value="SST"/>
+					</identifier>
+					<description value="SERUM CONTAINER"/>
+					<capacity>
+						<value value="10"/>
+						<unit value="mL"/>
+					</capacity>
+				</container>
+			</Specimen>
+		</resource>
+	</entry>
+	<entry>
+	<fullUrl value="https://cirdan.com/ultra-resultp-code/32"/>
+		<resource>
+			<Observation>
+				<id value="32"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+				</meta>
+				<identifier>
+					<system value="https://cirdan.com/ultra-resultp-code"/>
+					<value value="32"/>
+				</identifier>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="394595002"/>
+						<display value="Pathology (qualifier value)"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="1030791000000100"/>
+						<display value="Prostate specific antigen level (observable entity)"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:9c41a08b-ddc8-4584-bb9a-661e3ec0bdb9"/>
+					<display value="Davies,Michael"/>
+				</subject>
+				<effectiveDateTime value="2021-07-15T15:32:00+00:00"/>
+				<issued value="2021-07-15T15:32:00+00:00"/>
+				<performer>
+					<reference value="urn:uuid:02124c32-ab62-43de-9456-57f55402380f"/>
+					<display value="Lingfield Royal Infirmary (Blood Sciences)"/>
+				</performer>
+				<valueQuantity>
+					<value value="5.9"/>
+					<unit value="ug/L"/>
+				</valueQuantity>
+				<specimen>
+					<reference value="https://cirdan.com/ultra-specimen-barcode/35372799"/>
+				</specimen>
+				<referenceRange>
+					<low>
+						<value value="0"/>
+						<unit value="ug/L"/>
+					</low>
+					<high>
+						<value value="4"/>
+						<unit value="ug/L"/>
+					</high>
+				</referenceRange>
+			</Observation>
+		</resource>
+	</entry>
+</Bundle>
