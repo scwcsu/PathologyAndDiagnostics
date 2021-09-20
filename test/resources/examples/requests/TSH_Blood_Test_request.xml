@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="419bc8eb-1427-46d7-b141-8cb9271d0f5b" />
+  <id value="e3d16da5-e15b-4740-98be-a3c120add9cb" />
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />
-    <value value="14a352e0-71b5-4a57-b867-102addd298a0" />
+    <value value="6c6641be-73fe-48e8-aefa-6be83a838e06" />
   </identifier>
   <type value="message" />
   <entry>
-    <fullUrl value="urn:uuid:e3572d55-0c80-41fb-8947-e95260816e33" />
+    <fullUrl value="urn:uuid:f00e54d3-dec1-4d48-8ba2-210674dde366" />
     <resource>
             <MessageHeader>
-        <id value="e3572d55-0c80-41fb-8947-e95260816e33" />
+        <id value="f00e54d3-dec1-4d48-8ba2-210674dde366" />
         <event>
           <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2" />
           <code value="ITK012M" />
           <display value="ITK National Pathology" />
         </event>
         <receiver>
-          <reference value="urn:uuid:b222cfe5-e6d8-4f63-ac2b-678e70222929" />
+          <reference value="urn:uuid:f246d4a8-8983-48cb-9f23-875c2d2b0226" />
         </receiver>
         <sender>
-          <reference value="urn:uuid:06bf9875-b618-4f52-96a3-7a0e579c95f3" />
+          <reference value="urn:uuid:693b1a5a-6619-46a4-8f1b-ef4568fad1bf" />
         </sender>
         <timestamp value="2019-03-14T10:10:16+00:00" />
         <source>
           <endpoint value="NOROT003" />
         </source>
         <focus>
-          <reference value="urn:uuid:6041b6da-af85-4cfd-8d6d-0d52fc625e05" />
+          <reference value="urn:uuid:c820a2e3-e6ed-483f-9812-8cde3bcd3583" />
         </focus>
       </MessageHeader>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:6041b6da-af85-4cfd-8d6d-0d52fc625e05" />
+    <fullUrl value="urn:uuid:693b1a5a-6619-46a4-8f1b-ef4568fad1bf" />
     <resource>
       <Organization>
-    <id value="06bf9875-b618-4f52-96a3-7a0e579c95f3" />
+    <id value="693b1a5a-6619-46a4-8f1b-ef4568fad1bf" />
     <meta>
       <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
     </meta>
@@ -55,10 +55,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:b222cfe5-e6d8-4f63-ac2b-678e70222929" />
+    <fullUrl value="urn:uuid:f246d4a8-8983-48cb-9f23-875c2d2b0226" />
     <resource>
       <Organization>
-    <id value="b222cfe5-e6d8-4f63-ac2b-678e70222929" />
+    <id value="f246d4a8-8983-48cb-9f23-875c2d2b0226" />
     <meta>
       <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
     </meta>
@@ -77,10 +77,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:d46c3603-b862-4426-8ec3-885bb98f4936" />
+    <fullUrl value="urn:uuid:f3d8e9a5-6dc3-4932-a97a-b472271c11c9" />
     <resource>
       <Patient>
-    <id value="d46c3603-b862-4426-8ec3-885bb98f4936" />
+    <id value="f3d8e9a5-6dc3-4932-a97a-b472271c11c9" />
     <meta>
       <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1" />
     </meta>
@@ -102,46 +102,51 @@
       <family value="Brown" />
       <given value="Anne" />
     </name>
-    <gender value="Female" />
-    <birthDate value="15/04/1961" />
+    <gender value="female" />
+    <birthDate value="1961-04-15" />
 </Patient>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:6041b6da-af85-4cfd-8d6d-0d52fc625e05" />
+    <fullUrl value="urn:uuid:c820a2e3-e6ed-483f-9812-8cde3bcd3583" />
     <resource>
-            <ProcedureRequest xmlns="http://hl7.org/fhir">
-        <id value="6041b6da-af85-4cfd-8d6d-0d52fc625e05" />
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="c820a2e3-e6ed-483f-9812-8cde3bcd3583" />
         <meta>
           <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />
-          <value value="37846711-0105-4d16-af70-225cd4c8fad7" />
+          <value value="81584238-5e2d-4551-9233-d7215c6536f3" />
         </identifier>
         <status value="active" />
         <intent value="order" />
         <priority value="routine" />
         <code>
           <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="101648013"/>
+              </extension>
+            </extension>
             <system value="http://snomed.info/sct" />
             <code value="61167004" />
             <display value="Thyroid stimulating hormone measurement" />
           </coding>
         </code>
         <subject>
-          <reference value="urn:uuid:d46c3603-b862-4426-8ec3-885bb98f4936" />
+          <reference value="urn:uuid:f3d8e9a5-6dc3-4932-a97a-b472271c11c9" />
           <display value="Brown,Anne" />
         </subject>
         <authoredOn value="2019-06-04" />
         <requester>
           <agent>
-            <reference value="urn:uuid:06bf9875-b618-4f52-96a3-7a0e579c95f3" />
+            <reference value="urn:uuid:693b1a5a-6619-46a4-8f1b-ef4568fad1bf" />
             <display value="Green Lane Medical Centre" />
           </agent>
         </requester>
         <performer>
-          <reference value="urn:uuid:b222cfe5-e6d8-4f63-ac2b-678e70222929" />
+          <reference value="urn:uuid:f246d4a8-8983-48cb-9f23-875c2d2b0226" />
           <display value="Lingfield Royal Infirmary (Blood Sciences)" />
         </performer>
       </ProcedureRequest>

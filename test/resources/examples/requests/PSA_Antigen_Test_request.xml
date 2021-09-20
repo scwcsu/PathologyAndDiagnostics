@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="dc7b82e7-4f22-4679-a006-4a52fbd5e0ac" />
+  <id value="4df47515-31fa-4e94-a14b-10df36d2fc3c" />
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />
-    <value value="55506d33-c3a5-40c4-b800-7e79750b71d1" />
+    <value value="35b9ddab-c087-4b9a-892f-8cec9b9317f6" />
   </identifier>
   <type value="message" />
   <entry>
-    <fullUrl value="urn:uuid:cdd76a7e-7367-4c7d-9477-0dc5323a9ac3" />
+    <fullUrl value="urn:uuid:e6737e86-6013-46d6-a955-62c1092b5a63" />
     <resource>
             <MessageHeader>
-        <id value="cdd76a7e-7367-4c7d-9477-0dc5323a9ac3" />
+        <id value="e6737e86-6013-46d6-a955-62c1092b5a63" />
         <event>
           <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2" />
           <code value="ITK012M" />
           <display value="ITK National Pathology" />
         </event>
         <receiver>
-          <reference value="urn:uuid:c6ad8bb2-f4e8-4f7a-af23-011b07c8da2f" />
+          <reference value="urn:uuid:5ad9ad53-2e4e-4977-a714-344944171e98" />
         </receiver>
         <sender>
-          <reference value="urn:uuid:f61ce845-30f9-423e-93eb-91d28f23a0c1" />
+          <reference value="urn:uuid:924d23fe-e77d-4e0f-9d9e-69ee174a881c" />
         </sender>
         <timestamp value="2019-03-14T10:10:16+00:00" />
         <source>
           <endpoint value="NOROT003" />
         </source>
         <focus>
-          <reference value="urn:uuid:588f3e5b-d0e8-4985-8820-cf8e8de24a0b" />
+          <reference value="urn:uuid:260295b3-06b6-4c04-9a8b-d65e191e1d42" />
         </focus>
       </MessageHeader>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:588f3e5b-d0e8-4985-8820-cf8e8de24a0b" />
+    <fullUrl value="urn:uuid:924d23fe-e77d-4e0f-9d9e-69ee174a881c" />
     <resource>
       <Organization>
-    <id value="f61ce845-30f9-423e-93eb-91d28f23a0c1" />
+    <id value="924d23fe-e77d-4e0f-9d9e-69ee174a881c" />
     <meta>
       <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
     </meta>
@@ -55,10 +55,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:c6ad8bb2-f4e8-4f7a-af23-011b07c8da2f" />
+    <fullUrl value="urn:uuid:5ad9ad53-2e4e-4977-a714-344944171e98" />
     <resource>
       <Organization>
-    <id value="c6ad8bb2-f4e8-4f7a-af23-011b07c8da2f" />
+    <id value="5ad9ad53-2e4e-4977-a714-344944171e98" />
     <meta>
       <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
     </meta>
@@ -77,10 +77,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:3a008a5b-1c96-4d77-990d-9f7fce0217e8" />
+    <fullUrl value="urn:uuid:64a51e74-6e0e-4c6c-9146-cf8d0399a2e7" />
     <resource>
       <Patient>
-    <id value="3a008a5b-1c96-4d77-990d-9f7fce0217e8" />
+    <id value="64a51e74-6e0e-4c6c-9146-cf8d0399a2e7" />
     <meta>
       <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1" />
     </meta>
@@ -102,46 +102,51 @@
       <family value="Davies" />
       <given value="Michael" />
     </name>
-    <gender value="Male" />
-    <birthDate value="12/05/1905" />
+    <gender value="male" />
+    <birthDate value="1905-05-12" />
 </Patient>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:588f3e5b-d0e8-4985-8820-cf8e8de24a0b" />
+    <fullUrl value="urn:uuid:260295b3-06b6-4c04-9a8b-d65e191e1d42" />
     <resource>
-            <ProcedureRequest xmlns="http://hl7.org/fhir">
-        <id value="588f3e5b-d0e8-4985-8820-cf8e8de24a0b" />
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="260295b3-06b6-4c04-9a8b-d65e191e1d42" />
         <meta>
           <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />
-          <value value="c92256ba-8ebf-45d3-a9ad-f2ef726d6cd2" />
+          <value value="e227dafc-6209-4313-a15a-821db82043c2" />
         </identifier>
         <status value="active" />
         <intent value="order" />
         <priority value="routine" />
         <code>
           <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="105510018"/>
+              </extension>
+            </extension>
             <system value="http://snomed.info/sct" />
             <code value="63476009" />
             <display value="Prostate specific antigen measurement" />
           </coding>
         </code>
         <subject>
-          <reference value="urn:uuid:3a008a5b-1c96-4d77-990d-9f7fce0217e8" />
+          <reference value="urn:uuid:64a51e74-6e0e-4c6c-9146-cf8d0399a2e7" />
           <display value="Davies,Michael" />
         </subject>
         <authoredOn value="2019-06-04" />
         <requester>
           <agent>
-            <reference value="urn:uuid:f61ce845-30f9-423e-93eb-91d28f23a0c1" />
+            <reference value="urn:uuid:924d23fe-e77d-4e0f-9d9e-69ee174a881c" />
             <display value="Lingfield Royal Infirmary" />
           </agent>
         </requester>
         <performer>
-          <reference value="urn:uuid:c6ad8bb2-f4e8-4f7a-af23-011b07c8da2f" />
+          <reference value="urn:uuid:5ad9ad53-2e4e-4977-a714-344944171e98" />
           <display value="Lingfield Royal Infirmary (Blood Sciences)" />
         </performer>
       </ProcedureRequest>

@@ -15,7 +15,9 @@
         <source>
           <endpoint value="{{ endpoint }}" />
         </source>
+{% for focus_uuid in focus_uuids %}
         <focus>
           <reference value="urn:uuid:{{ focus_uuid }}" />
         </focus>
+{% endfor %}
       </MessageHeader>

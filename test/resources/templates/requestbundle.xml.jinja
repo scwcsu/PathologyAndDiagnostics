@@ -30,10 +30,12 @@
       {{ patient_resource }}
     </resource>
   </entry>
+{% for procedure_request_resource in procedure_request_resources %}
   <entry>
-    <fullUrl value="urn:uuid:{{ request_uuid }}" />
+    <fullUrl value="urn:uuid:{{ request_uuid[loop.index0] }}" />
     <resource>
-      {{ procedure_request_resource }}
+{{ procedure_request_resource }}
     </resource>
   </entry>
+{% endfor %}
 </Bundle>

@@ -10,8 +10,18 @@
         <status value="{{ request_status }}" />
         <intent value="order" />
         <priority value="routine" />
+{% if requisition_id %}  
+        <requisition> 
+            <value value="{{ requisition_id }}"/> 
+        </requisition>
+{% endif %}
         <code>
           <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="{{ request_utl_display_code }}"/>
+              </extension>
+            </extension>
             <system value="http://snomed.info/sct" />
             <code value="{{ request_utl_code }}" />
             <display value="{{ request_utl_display }}" />

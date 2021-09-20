@@ -1,0 +1,304 @@
+<Bundle xmlns="http://hl7.org/fhir" xmlns:xsltUtils="http://XLab.Resource/xsltUtils">
+  <id value="3d36b150-3b42-41f1-b46c-10fb52e14c8a" />
+  <type value="message" />
+  <entry>
+    <fullUrl value="urn:uuid:0dc666fa-ffc6-4077-a2ed-9553ab972abd" />
+    <resource>
+      <MessageHeader>
+        <id value="0dc666fa-ffc6-4077-a2ed-9553ab972abd" />
+        <event>
+          <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2" />
+          <code value="ITK012M" />
+          <display value="ITK National Pathology" />
+        </event>
+        <receiver>
+          <reference value="urn:uuid:2f7b660a-3e4a-41c5-bec1-356aa0347499" />
+        </receiver>
+        <sender>
+          <reference value="urn:uuid:2aaee28f-49a8-4e77-aa1b-b8d22e2f0494" />
+        </sender>
+        <timestamp value="2021-07-15T10:59:40Z" />
+        <source>
+          <endpoint value="NPEX" />
+        </source>
+        <focus>
+          <reference value="urn:uuid:c60081aa-72dd-47b0-bdd3-34c751cca5b2" />
+        </focus>
+        <focus>
+          <reference value="urn:uuid:eb775443-8aad-45c0-bf2d-dfac46e84fd3" />
+        </focus>
+        <focus>
+          <reference value="urn:uuid:f2fe83bf-f44a-4503-ba63-869bc7a05955" />
+        </focus>
+        <focus>
+          <reference value="urn:uuid:8eaa7c7c-4fc5-4fbf-b44e-bc126025c042" />
+        </focus>
+        <focus>
+          <reference value="urn:uuid:1eb3112a-841f-47c1-b0bd-bcd0a6c2fd2e" />
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:2aaee28f-49a8-4e77-aa1b-b8d22e2f0494" />
+    <resource>
+      <Organization>
+        <id value="2aaee28f-49a8-4e77-aa1b-b8d22e2f0494" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+        </meta>
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+          <value value="M112" />
+        </identifier>
+        <name value="Manor GP Practice" />
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:2f7b660a-3e4a-41c5-bec1-356aa0347499" />
+    <resource>
+      <Organization>
+        <id value="2f7b660a-3e4a-41c5-bec1-356aa0347499" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+        </meta>
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+          <value value="D82015" />
+        </identifier>
+        <name value="Lingfield Royal Infirmary (Blood Sciences)" />
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:25896330-d3c1-48c6-9fce-912d7de949cc" />
+    <resource>
+      <Patient>
+        <id value="25896330-d3c1-48c6-9fce-912d7de949cc" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1" />
+        </meta>
+        <identifier>
+          <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+            <valueCodeableConcept>
+              <coding>
+                <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" />
+                <code value="01" />
+                <display value="Number present and verified" />
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <system value="https://fhir.nhs.uk/Id/nhs-number" />
+          <value value="9432003812" />
+        </identifier>
+        <name>
+          <use value="official" />
+          <family value="Stanner" />
+          <given value="Lisa" />
+        </name>
+        <birthDate value="1961-02-24" />
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c60081aa-72dd-47b0-bdd3-34c751cca5b2" />
+    <resource>
+      <ProcedureRequest>
+        <id value="c60081aa-72dd-47b0-bdd3-34c751cca5b2" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="fd25e7a8-ccd0-48e9-8560-5a8266879050" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107871000000107" />
+            <display value="Sodium substance concentration in serum" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:25896330-d3c1-48c6-9fce-912d7de949cc" />
+          <display value="Stanner, Lisa" />
+        </subject>
+        <authoredOn value="2021-07-15T10:59:40Z" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:2aaee28f-49a8-4e77-aa1b-b8d22e2f0494" />
+            <display value="Green, Jane" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:2f7b660a-3e4a-41c5-bec1-356aa0347499" />
+          <display value="Midtown District Hospital" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:eb775443-8aad-45c0-bf2d-dfac46e84fd3" />
+    <resource>
+      <ProcedureRequest>
+        <id value="eb775443-8aad-45c0-bf2d-dfac46e84fd3" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="55e1d94f-c0a2-4e1a-b692-455e8722818e" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107761000000109" />
+            <display value="Potassium substance concentration in serum" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:25896330-d3c1-48c6-9fce-912d7de949cc" />
+          <display value="Stanner, Lisa" />
+        </subject>
+        <authoredOn value="2021-07-15T10:59:40Z" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:2aaee28f-49a8-4e77-aa1b-b8d22e2f0494" />
+            <display value="Green, Jane" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:2f7b660a-3e4a-41c5-bec1-356aa0347499" />
+          <display value="Midtown District Hospital" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:f2fe83bf-f44a-4503-ba63-869bc7a05955" />
+    <resource>
+      <ProcedureRequest>
+        <id value="f2fe83bf-f44a-4503-ba63-869bc7a05955" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="20575f0a-b43b-464a-ad5b-be7fa6b417be" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1106511000000102" />
+            <display value="Chloride substance concentration in serum" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:25896330-d3c1-48c6-9fce-912d7de949cc" />
+          <display value="Stanner, Lisa" />
+        </subject>
+        <authoredOn value="2021-07-15T10:59:40Z" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:2aaee28f-49a8-4e77-aa1b-b8d22e2f0494" />
+            <display value="Green, Jane" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:2f7b660a-3e4a-41c5-bec1-356aa0347499" />
+          <display value="Midtown District Hospital" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:8eaa7c7c-4fc5-4fbf-b44e-bc126025c042" />
+    <resource>
+      <ProcedureRequest>
+        <id value="8eaa7c7c-4fc5-4fbf-b44e-bc126025c042" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="26ae639e-795c-4d01-bc0c-b391f89e59e9" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107001000000108" />
+            <display value="Creatinine substance concentration in serum" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:25896330-d3c1-48c6-9fce-912d7de949cc" />
+          <display value="Stanner, Lisa" />
+        </subject>
+        <authoredOn value="2021-07-15T10:59:40Z" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:2aaee28f-49a8-4e77-aa1b-b8d22e2f0494" />
+            <display value="Green, Jane" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:2f7b660a-3e4a-41c5-bec1-356aa0347499" />
+          <display value="Midtown District Hospital" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:1eb3112a-841f-47c1-b0bd-bcd0a6c2fd2e" />
+    <resource>
+      <ProcedureRequest>
+        <id value="1eb3112a-841f-47c1-b0bd-bcd0a6c2fd2e" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="5047c61b-dc51-482e-b9f7-5fa3500bd5ed" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107411000000104" />
+            <display value="Sodium substance concentration in serum" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:25896330-d3c1-48c6-9fce-912d7de949cc" />
+          <display value="Stanner, Lisa" />
+        </subject>
+        <authoredOn value="2021-07-15T10:59:40Z" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:2aaee28f-49a8-4e77-aa1b-b8d22e2f0494" />
+            <display value="Green, Jane" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:2f7b660a-3e4a-41c5-bec1-356aa0347499" />
+          <display value="Midtown District Hospital" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+</Bundle>

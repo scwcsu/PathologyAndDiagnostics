@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="069cfe69-2620-4b89-a8c7-7c1d08434214" />
+  <id value="4faf9b9a-41c4-4c94-96e0-ee150fbfc7af" />
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122" />
-    <value value="fbe9c724-07f7-4455-8a2a-972e896a944e" />
+    <value value="d37fb4d7-73ea-445e-8575-fa870e2323a6" />
   </identifier>
   <type value="message" />
   <entry>
-    <fullUrl value="urn:uuid:8372e1a3-4b0f-4b13-b34e-615fab0f87d7" />
+    <fullUrl value="urn:uuid:4760d6e5-6da6-497c-a5ce-1a95b90b179c" />
     <resource>
             <MessageHeader>
-        <id value="8372e1a3-4b0f-4b13-b34e-615fab0f87d7" />
+        <id value="4760d6e5-6da6-497c-a5ce-1a95b90b179c" />
         <event>
           <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2" />
           <code value="ITK012M" />
           <display value="ITK National Pathology" />
         </event>
         <receiver>
-          <reference value="urn:uuid:d38f174f-1bc9-4752-b866-91a3a85030e5" />
+          <reference value="urn:uuid:60d48e99-4fa0-47df-a218-74ccbcb0d4a8" />
         </receiver>
         <sender>
-          <reference value="urn:uuid:bf2f7c5b-bf44-4138-a3a9-d9060f48f88a" />
+          <reference value="urn:uuid:765309e2-aafa-41c6-b0a9-2a51a9896844" />
         </sender>
         <timestamp value="2019-03-14T10:10:16+00:00" />
         <source>
           <endpoint value="NOROT003" />
         </source>
         <focus>
-          <reference value="urn:uuid:d80e5179-3177-4be4-88ed-94eefd3d27e5" />
+          <reference value="urn:uuid:8f176a51-5214-4134-8b2b-73b0d6fc5dcd" />
         </focus>
       </MessageHeader>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:d80e5179-3177-4be4-88ed-94eefd3d27e5" />
+    <fullUrl value="urn:uuid:765309e2-aafa-41c6-b0a9-2a51a9896844" />
     <resource>
       <Organization>
-    <id value="bf2f7c5b-bf44-4138-a3a9-d9060f48f88a" />
+    <id value="765309e2-aafa-41c6-b0a9-2a51a9896844" />
     <meta>
       <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
     </meta>
@@ -44,7 +44,7 @@
       <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
       <value value="M112" />
     </identifier>
-    <name value="Manor GP Practice " />
+    <name value="Manor GP Practice" />
     <address>
       <line value="Manor Lane" />
       <city value="Leeds" />
@@ -55,10 +55,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:d38f174f-1bc9-4752-b866-91a3a85030e5" />
+    <fullUrl value="urn:uuid:60d48e99-4fa0-47df-a218-74ccbcb0d4a8" />
     <resource>
       <Organization>
-    <id value="d38f174f-1bc9-4752-b866-91a3a85030e5" />
+    <id value="60d48e99-4fa0-47df-a218-74ccbcb0d4a8" />
     <meta>
       <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
     </meta>
@@ -77,10 +77,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:7a85be26-dd70-442e-8e08-ad536b67f1be" />
+    <fullUrl value="urn:uuid:6d51a9ba-e662-4d9a-a962-54cab53c238c" />
     <resource>
       <Patient>
-    <id value="7a85be26-dd70-442e-8e08-ad536b67f1be" />
+    <id value="6d51a9ba-e662-4d9a-a962-54cab53c238c" />
     <meta>
       <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1" />
     </meta>
@@ -102,46 +102,51 @@
       <family value="Stanner" />
       <given value="Lisa" />
     </name>
-    <gender value="Female" />
-    <birthDate value="15/04/1961" />
+    <gender value="female" />
+    <birthDate value="1961-04-15" />
 </Patient>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:d80e5179-3177-4be4-88ed-94eefd3d27e5" />
+    <fullUrl value="urn:uuid:8f176a51-5214-4134-8b2b-73b0d6fc5dcd" />
     <resource>
-            <ProcedureRequest xmlns="http://hl7.org/fhir">
-        <id value="d80e5179-3177-4be4-88ed-94eefd3d27e5" />
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="8f176a51-5214-4134-8b2b-73b0d6fc5dcd" />
         <meta>
           <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
         </meta>
         <identifier>
           <system value="https://tools.ietf.org/html/rfc4122" />
-          <value value="b4f0652a-7385-46e2-aa99-791638d43449" />
+          <value value="ed24ef61-72fb-4f6a-8e5e-6ba3a49d3980" />
         </identifier>
         <status value="active" />
         <intent value="order" />
         <priority value="routine" />
         <code>
           <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="2842434017"/>
+              </extension>
+            </extension>
             <system value="http://snomed.info/sct" />
             <code value="444164000" />
             <display value="Urea, electrolytes and creatinine measurement" />
           </coding>
         </code>
         <subject>
-          <reference value="urn:uuid:7a85be26-dd70-442e-8e08-ad536b67f1be" />
+          <reference value="urn:uuid:6d51a9ba-e662-4d9a-a962-54cab53c238c" />
           <display value="Stanner,Lisa" />
         </subject>
         <authoredOn value="2019-06-04" />
         <requester>
           <agent>
-            <reference value="urn:uuid:bf2f7c5b-bf44-4138-a3a9-d9060f48f88a" />
-            <display value="Manor GP Practice " />
+            <reference value="urn:uuid:765309e2-aafa-41c6-b0a9-2a51a9896844" />
+            <display value="Manor GP Practice" />
           </agent>
         </requester>
         <performer>
-          <reference value="urn:uuid:d38f174f-1bc9-4752-b866-91a3a85030e5" />
+          <reference value="urn:uuid:60d48e99-4fa0-47df-a218-74ccbcb0d4a8" />
           <display value="Lingfield Royal Infirmary (Blood Sciences)" />
         </performer>
       </ProcedureRequest>
