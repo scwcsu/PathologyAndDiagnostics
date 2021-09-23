@@ -12,7 +12,7 @@ https://developer.nhs.uk/apis/itk3nationalpathology-1-1-0/
  ### test/resources/examples
  This folder contains examples of Requests and Reports in the FHIR standard. See the README in templates folder ofr details on how these can be adjusted or new examples generated.
 
- ### test/resources/examples
+ ### test/resources/scripts
  Bash and Python Scripts that are used to validate submiited messages and generate examples.
 
  ### test/resources/structures
