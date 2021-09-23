@@ -1,6 +1,6 @@
 # Pathology and Diagnostics FHIR Testing
 
-This is an initial repository for testing assets related to Pathology FHIR stadnard,
+This is an initial repository for testing assets related to the NHS Pathology FHIR standard,
 
 https://developer.nhs.uk/apis/itk3nationalpathology-1-1-0/
 
