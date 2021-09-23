@@ -1,0 +1,132 @@
+      <Observation>
+        <id value="{{ observation_uuid }}" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="{{ observation_identifier }}" />
+        </identifier>
+        <status value="{{ status }}" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="394595002" />
+            <display value="Pathology (qualifier value)" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="{{ code }}" />
+            <display value="{{ display }}" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:{{ patient_uuid }}" />
+          <display value="{{ patient_display }}" />
+        </subject>
+        <!--Test performed date/time. Not in EdiFACT examples. Check spec-->
+        <effectiveDateTime value="{{ effective_datetime }}" />
+        <performer>
+          <reference value="urn:uuid:{{ performer_uuid }}" />
+          <display value="{{ performer_display }}" />
+        </performer>
+        {% if value.quantity %}
+        <valueQuantity>
+          <value value="{{ value.quantity.value }}" />
+          <unit value="{{ value.quantity.unit }}" />
+        </valueQuantity>
+        {% endif %}
+        {% if value.codeable %}
+        <valueCodeableConcept>
+            <coding>
+                <system value="{{ value.codeable.system }}" />
+                <code value="{{ value.codeable.code }}" />
+                <display value="{{ value.codeable.display }}" />
+            </coding>
+        </valueCodeableConcept>
+        {% endif %}
+        {% if value.string %}
+        <valueString value="{{ value.string.value }}"/>
+        {% endif %}
+        {% if value.boolean %}
+        <valueBoolean value="{{ value.boolean.value }}"/>
+        {% endif %}
+        {% if value.range %}
+        <valueRange>
+            <low>
+              <value value="{{ value.range.low.value }}" />
+              <unit value="{{ value.range.low.unit }}" />
+            </low>
+            <high>
+              <value value="{{ value.range.high.value }}" />
+              <unit value="{{ value.range.high.value }}" />
+            </high>
+        </valueRange>        
+        {% endif %}
+        {% if value.ratio %}
+        <valueRatio>
+            <numerator>
+              <value value="{{ value.ratio.numerator.value }}" />
+            </numerator>
+            <denominator>
+              <value value="{{ value.ratio.denominator.value }}" />
+            </denominator>
+            </valueRatio>        
+        {% endif %}
+        {% if value.sampled %}
+        <valueSampledData>
+            <origin>
+              <value value="{{ value.sample.origin.value }}"/>
+              <unit value="{{ value.sample.origin.unit}}"/>
+              <system value="{{ value.sample.origin.system }}"/>
+              <code value="{{ value.sample.origin.code }}"/>
+            </origin>
+            <period value="{{ value.sample.period }}"/>
+            <factor value="{{ value.sample.factor }}"/>
+            <dimensions value="{{ value.sampled.dimensions }}"/>
+            <data value="{{ value.sampled.data }}"/>
+        </valueSampledData>        
+        {% endif %}
+        {% if value.attachement %}
+        <valueAttachement>
+            <contentType value="{{ value.attachment.content_type }}" />
+            <language value="{{ value.attachment.language }}" />
+            <data value="{{ value.attachment.data }}" /> <!-- covers many lines -->
+            <title value="{{ value.attachment.title }}" />
+        </valueAttachement>        
+        {% endif %}
+        {% if value.time %}
+        <valueTime value="{{ value.time.value }}" />
+        {% endif %}
+        {% if value.datetime %}
+        <valueDateTime value="{{ value.datetime.value }}" />
+        {% endif %}
+        {% if value.period %}
+        <valuePeriod>
+            <start value="{{ value.period.start }}"/>
+            <end value="{{ value.period.end }}"/>
+        </valuePeriod>
+        {% endif %}
+        {% if value.reference %}
+        <referenceRange>
+          <low>
+            <value value="{{ value.reference.low_reference }}" />
+          </low>
+          <high>
+            <value value="{{ value.reference.high_reference }}" />
+          </high>
+        </referenceRange>
+        {% endif %}
+        <specimen>
+          <reference value="urn:uuid:{{ specimen_uuid }}" />
+        </specimen>
+        {% for related_uuid in related_uuids %}
+        <related>
+            <target>
+                <reference value="urn:uuid:{{ related_uuid }}"/>
+            </target>
+        </related>
+        {% endfor %}
+      </Observation>
