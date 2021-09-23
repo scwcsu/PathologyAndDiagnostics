@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="{{ bundle_uuid }}" />
+  <meta>
+    <lastUpdated value="2015-04-07T19:30:00+00:00" />
+    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1" />
+  </meta>
+  <identifier>
+    <system value="https://tools.ietf.org/html/rfc4122" />
+    <value value="{{ bundle_identifier }}" />
+  </identifier>
+  <type value="message" />
+  <entry>
+    <fullUrl value="urn:uuid:{{ message_header_uuid }}" />
+    <resource>
+      {{ message_header_resource }}
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:{{ requester_uuid }}" />
+    <resource>
+      {{ requester_resource }}
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:{{ performer_uuid }}" />
+    <resource>
+      {{ performer_resource }}
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:{{ patient_uuid }}" />
+    <resource>
+      {{ patient_resource }}
+    </resource>
+  </entry>
+  {% for procedure_request_resource in procedure_request_resources %}
+  <entry>
+    <fullUrl value="urn:uuid:{{ request_uuid[loop.index0] }}" />
+    <resource>
+{{ procedure_request_resource }}
+    </resource>
+  </entry>
+{% endfor %}
+  <entry>
+    <fullUrl value="urn:uuid:{{ diagnostic_report_uuid }}" />
+    <resource>
+{{ diagnostic_report }}
+    </resource>
+  </entry>
+  {% for specimen in specimens %}
+  <entry>
+    <fullUrl value="urn:uuid:{{ specimen_uuid[loop.index0] }}" />
+    <resource>
+{{ specimen }}
+    </resource>
+  </entry>
+{% endfor %}
+{% for observation in observations %}
+<entry>
+  <fullUrl value="urn:uuid:{{ observation_uuid[loop.index0] }}" />
+  <resource>
+{{ observation }}
+  </resource>
+</entry>
+{% endfor %}
+</Bundle>

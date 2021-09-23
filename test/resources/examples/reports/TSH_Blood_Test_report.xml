@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="f928943f-a1e0-4165-9116-690d63ba5f6d" />
+  <meta>
+    <lastUpdated value="2015-04-07T19:30:00+00:00" />
+    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1" />
+  </meta>
+  <identifier>
+    <system value="https://tools.ietf.org/html/rfc4122" />
+    <value value="024c017f-d5d1-4158-be1b-21beb46e0e21" />
+  </identifier>
+  <type value="message" />
+  <entry>
+    <fullUrl value="urn:uuid:221b2856-25ee-49da-873a-37a1d3ef16da" />
+    <resource>
+            <MessageHeader>
+        <id value="221b2856-25ee-49da-873a-37a1d3ef16da" />
+        <event>
+          <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2" />
+          <code value="ITK012M" />
+          <display value="ITK National Pathology" />
+        </event>
+        <receiver>
+          <reference value="urn:uuid:f094277d-a19b-464c-bc0a-28e9cfdfb3fa" />
+        </receiver>
+        <sender>
+          <reference value="urn:uuid:c67f1520-15d1-463b-b99c-9fc879538d3a" />
+        </sender>
+        <timestamp value="2019-03-14T10:10:16+00:00" />
+        <source>
+          <endpoint value="NOROT003" />
+        </source>
+        <focus>
+          <reference value="urn:uuid:58e81a7b-1965-4645-810c-ef2cc689b9ff" />
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c67f1520-15d1-463b-b99c-9fc879538d3a" />
+    <resource>
+      <Organization>
+    <id value="c67f1520-15d1-463b-b99c-9fc879538d3a" />
+    <meta>
+      <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+    </meta>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+      <value value="L823" />
+    </identifier>
+    <name value="Green Lane Medical Centre" />
+    <address>
+      <line value="Primary Road" />
+      <city value="Greenham" />
+      <district value="Bridgwater" />
+      <postalCode value="BW1 1GP" />
+    </address>
+  </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:f094277d-a19b-464c-bc0a-28e9cfdfb3fa" />
+    <resource>
+      <Organization>
+    <id value="f094277d-a19b-464c-bc0a-28e9cfdfb3fa" />
+    <meta>
+      <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+    </meta>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+      <value value="D82015" />
+    </identifier>
+    <name value="Lingfield Royal Infirmary (Blood Sciences)" />
+    <address>
+      <line value="Lab Street" />
+      <city value="Linfield" />
+      <district value="Surrey" />
+      <postalCode value="LI1 1LB" />
+    </address>
+  </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:9e94ba30-3a0d-430b-a476-ff2e713ed3e1" />
+    <resource>
+      <Patient>
+    <id value="9e94ba30-3a0d-430b-a476-ff2e713ed3e1" />
+    <meta>
+      <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1" />
+    </meta>
+    <identifier>
+      <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" />
+            <code value="01" />
+            <display value="Number present and verified" />
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <system value="https://fhir.nhs.uk/Id/nhs-number" />
+      <value value="9449305552" />
+    </identifier>
+    <name>
+      <use value="official" />
+      <family value="Brown" />
+      <given value="Anne" />
+    </name>
+    <gender value="female" />
+    <birthDate value="1961-04-15" />
+</Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:58e81a7b-1965-4645-810c-ef2cc689b9ff" />
+    <resource>
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="58e81a7b-1965-4645-810c-ef2cc689b9ff" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="6e2d56dd-052f-4da1-a43e-fcfb47ee5b1e" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+        <code>
+          <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="101648013"/>
+              </extension>
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="61167004" />
+            <display value="Thyroid stimulating hormone measurement" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:9e94ba30-3a0d-430b-a476-ff2e713ed3e1" />
+          <display value="Brown,Anne" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:c67f1520-15d1-463b-b99c-9fc879538d3a" />
+            <display value="Green Lane Medical Centre" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:f094277d-a19b-464c-bc0a-28e9cfdfb3fa" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:bd1baca1-c579-4793-bfd4-4cbae816d0ea" />
+    <resource>
+      <DiagnosticReport xmlns="http://hl7.org/fhir">
+        <id value="bd1baca1-c579-4793-bfd4-4cbae816d0ea" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1" />
+        </meta>
+        <!--Test Request Summary-->
+        <basedOn>
+          <reference value="urn:uuid:58e81a7b-1965-4645-810c-ef2cc689b9ff" />
+        </basedOn>
+        <status value="Final" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="721981007" />
+            <display value="Diagnostic studies report" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:9e94ba30-3a0d-430b-a476-ff2e713ed3e1" />
+          <display value="BROWN,Anne" />
+        </subject>
+        <issued value="2019-03-03T12:00:00+00:00" />
+        <performer>
+          <actor>
+            <reference value="urn:uuid:f094277d-a19b-464c-bc0a-28e9cfdfb3fa" />
+            <display value="Green Lane Medical Centre" />
+          </actor>
+        </performer>
+        <specimen>
+          <reference value="urn:uuid:9ddb5fe0-2519-493f-b54d-3c34c0efa986" />
+        </specimen>
+        <result>
+          <reference value="urn:uuid:56ca56c7-03bd-4d8c-8d36-12fd12bb29fd" />
+        </result>
+</DiagnosticReport>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:9ddb5fe0-2519-493f-b54d-3c34c0efa986" />
+    <resource>
+      <Specimen>
+        <id value="9ddb5fe0-2519-493f-b54d-3c34c0efa986" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="bec6f381-ee90-4df5-8f68-878715f75b0a" />
+        </identifier>
+        <status value="available" />
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="119361006" />
+            <display value="Plasma specimen" />
+          </coding>
+        </type>
+        <subject>
+          <reference value="urn:uuid:9e94ba30-3a0d-430b-a476-ff2e713ed3e1" />
+          <display value="BROWN,Anne" />
+        </subject>
+        <receivedTime value="2019-01-29T15:00:00+00:00" />
+        <collection>
+          <collectedDateTime value="2017-11-01T11:00:00+00:00" />
+          <quantity>
+            <value value="11" />
+            <unit value="ng/mL" />
+          </quantity>
+        </collection>
+      </Specimen>
+    </resource>
+  </entry>
+<entry>
+  <fullUrl value="urn:uuid:56ca56c7-03bd-4d8c-8d36-12fd12bb29fd" />
+  <resource>
+      <Observation>
+        <id value="56ca56c7-03bd-4d8c-8d36-12fd12bb29fd" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="e33aebaa-8cf4-4604-ab75-117f309052dd" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="394595002" />
+            <display value="Pathology (qualifier value)" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1022791000000101" />
+            <display value="TSH (thyroid stimulating hormone) level" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:9e94ba30-3a0d-430b-a476-ff2e713ed3e1" />
+          <display value="BROWN,Anne" />
+        </subject>
+        <!--Test performed date/time. Not in EdiFACT examples. Check spec-->
+        <effectiveDateTime value="2017-11-01T15:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:f094277d-a19b-464c-bc0a-28e9cfdfb3fa" />
+          <display value="Green Lane Medical Centre" />
+        </performer>
+        <valueQuantity>
+          <value value="0.1" />
+          <unit value="mU/L " />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:9ddb5fe0-2519-493f-b54d-3c34c0efa986" />
+        </specimen>
+      </Observation>
+  </resource>
+</entry>
+</Bundle>

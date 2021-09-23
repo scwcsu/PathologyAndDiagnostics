@@ -32,101 +32,100 @@
           <reference value="urn:uuid:{{ performer_uuid }}" />
           <display value="{{ performer_display }}" />
         </performer>
-        Boolean | Range | Ratio | SampledData | Attachment | Time | dateTime | Period        
-        {% if quantity %}
+        {% if value.quantity %}
         <valueQuantity>
-          <value value="{{ quantity.value }}" />
-          <unit value="{{ quantity.unit }}" />
+          <value value="{{ value.quantity.value }}" />
+          <unit value="{{ value.quantity.unit }}" />
         </valueQuantity>
         {% endif %}
-        {% if codeable %}
+        {% if value.codeable %}
         <valueCodeableConcept>
             <coding>
-                <system value="{{ codeable.system }}" />
-                <code value="{{ codeable.code }}" />
-                <display value="{{ codeable.display }}" />
+                <system value="{{ value.codeable.system }}" />
+                <code value="{{ value.codeable.code }}" />
+                <display value="{{ value.codeable.display }}" />
             </coding>
         </valueCodeableConcept>
         {% endif %}
-        {% if string %}
-        <valueString value="{{ string.value }}"/>
+        {% if value.string %}
+        <valueString value="{{ value.string.value }}"/>
         {% endif %}
-        {% if boolean %}
-        <valueBoolean value="{{ boolean.value }}"/>
+        {% if value.boolean %}
+        <valueBoolean value="{{ value.boolean.value }}"/>
         {% endif %}
-        {% if range %}
+        {% if value.range %}
         <valueRange>
             <low>
-              <value value="range.low.value" />
-              <unit value="range.low.unit" />
+              <value value="{{ value.range.low.value }}" />
+              <unit value="{{ value.range.low.unit }}" />
             </low>
             <high>
-              <value value="range.high.value" />
-              <unit value="range.high.unit" />
+              <value value="{{ value.range.high.value }}" />
+              <unit value="{{ value.range.high.value }}" />
             </high>
         </valueRange>        
         {% endif %}
-        {% if ratio %}
+        {% if value.ratio %}
         <valueRatio>
             <numerator>
-              <value value="numerator.value" />
+              <value value="{{ value.ratio.numerator.value }}" />
             </numerator>
             <denominator>
-              <value value="denominator.value" />
+              <value value="{{ value.ratio.denominator.value }}" />
             </denominator>
-           </valueRatio>        
+            </valueRatio>        
         {% endif %}
-        {% if sampled %}
+        {% if value.sampled %}
         <valueSampledData>
             <origin>
-             <value value="{{ sample.origin.value }}"/>
-             <unit value="{{ sample.origin.unit}}"/>
-             <system value="{{ sample.origin.system}}"/>
-             <code value="{{ sample.origin.code }}"/>
+              <value value="{{ value.sample.origin.value }}"/>
+              <unit value="{{ value.sample.origin.unit}}"/>
+              <system value="{{ value.sample.origin.system }}"/>
+              <code value="{{ value.sample.origin.code }}"/>
             </origin>
-            <period value="{{ sample.period }}"/>
-            <factor value="{{ sample.factor }}"/>
-            <dimensions value="{{ sampled.dimensions }}"/>
-            <data value="{{ sampled.data }}"/>
+            <period value="{{ value.sample.period }}"/>
+            <factor value="{{ value.sample.factor }}"/>
+            <dimensions value="{{ value.sampled.dimensions }}"/>
+            <data value="{{ value.sampled.data }}"/>
         </valueSampledData>        
         {% endif %}
-        {% if attachement %}
+        {% if value.attachement %}
         <valueAttachement>
-            <contentType value="{{ attachment.content_type }}" />
-            <language value="{{ attachment.language }}" />
-            <data value="{{ attachment.data }}" /> <!-- covers many lines -->
-            <title value="{{ attachment.title }}" />
+            <contentType value="{{ value.attachment.content_type }}" />
+            <language value="{{ value.attachment.language }}" />
+            <data value="{{ value.attachment.data }}" /> <!-- covers many lines -->
+            <title value="{{ value.attachment.title }}" />
         </valueAttachement>        
         {% endif %}
-        {% if time %}
-        <valueTime value="time.value" />
+        {% if value.time %}
+        <valueTime value="{{ value.time.value }}" />
         {% endif %}
-        {% if datetime %}
-        <valueDateTime value="datetime.value" />
+        {% if value.datetime %}
+        <valueDateTime value="{{ value.datetime.value }}" />
         {% endif %}
-        {% if period %}
+        {% if value.period %}
         <valuePeriod>
-            <start value="period.start"/>
-            <end value="period.end"/>
+            <start value="{{ value.period.start }}"/>
+            <end value="{{ value.period.end }}"/>
         </valuePeriod>
         {% endif %}
-       <specimen>
-          <reference value="urn:uuid:{{ specimen_uuid }}" />
-        </specimen>
-        {% if reference %}
+        {% if value.reference %}
         <referenceRange>
           <low>
-            <value value="{{ reference.low_reference }}" />
+            <value value="{{ value.reference.low_reference }}" />
           </low>
           <high>
-            <value value="{{ reference.high_reference }}" />
+            <value value="{{ value.reference.high_reference }}" />
           </high>
         </referenceRange>
         {% endif %}
+        <specimen>
+          <reference value="urn:uuid:{{ specimen_uuid }}" />
+        </specimen>
         {% for related_uuid in related_uuids %}
         <related>
             <target>
-                <reference value="urn:uuid:{{ realted_uuid }}"/>
+                <reference value="urn:uuid:{{ related_uuid }}"/>
             </target>
         </related>
         {% endfor %}

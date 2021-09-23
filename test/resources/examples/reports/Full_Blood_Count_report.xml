@@ -1,0 +1,1815 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="d065e008-59b7-43c3-81da-3180c695b26b" />
+  <meta>
+    <lastUpdated value="2015-04-07T19:30:00+00:00" />
+    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1" />
+  </meta>
+  <identifier>
+    <system value="https://tools.ietf.org/html/rfc4122" />
+    <value value="e8a228ff-2b57-49ed-992d-3035a9cda8a3" />
+  </identifier>
+  <type value="message" />
+  <entry>
+    <fullUrl value="urn:uuid:cee72b6b-52c6-452b-8f79-c56324630af0" />
+    <resource>
+            <MessageHeader>
+        <id value="cee72b6b-52c6-452b-8f79-c56324630af0" />
+        <event>
+          <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2" />
+          <code value="ITK012M" />
+          <display value="ITK National Pathology" />
+        </event>
+        <receiver>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+        </receiver>
+        <sender>
+          <reference value="urn:uuid:a003d235-5d96-4cbf-bb3c-5065cc424f7f" />
+        </sender>
+        <timestamp value="2019-03-14T10:10:16+00:00" />
+        <source>
+          <endpoint value="NOROT003" />
+        </source>
+        <focus>
+          <reference value="urn:uuid:873bd0e7-ea4b-4fd9-853e-877e251b69e1" />
+        </focus>
+        <focus>
+          <reference value="urn:uuid:e7364a4b-0970-4760-89e8-5bd0b99362cf" />
+        </focus>
+        <focus>
+          <reference value="urn:uuid:0b3f19a6-d978-4fe3-bb4d-5dc0a6d518fd" />
+        </focus>
+        <focus>
+          <reference value="urn:uuid:8cf2ebe7-0f43-4cfb-b48e-4f84ee163e94" />
+        </focus>
+        <focus>
+          <reference value="urn:uuid:ed58f826-47c4-4406-ac56-a67269714251" />
+        </focus>
+        <focus>
+          <reference value="urn:uuid:da3a366c-9cbe-4cef-9b2a-5774e0d2fed6" />
+        </focus>
+        <focus>
+          <reference value="urn:uuid:5549c83f-ce4f-4cc4-aa48-6ec0ae15c645" />
+        </focus>
+        <focus>
+          <reference value="urn:uuid:a8a68598-6465-46ff-b100-97df66270cc3" />
+        </focus>
+        <focus>
+          <reference value="urn:uuid:2725737b-1f1d-40ef-a0e3-c13bd3e8bc09" />
+        </focus>
+        <focus>
+          <reference value="urn:uuid:dded7a15-3a28-4b7c-8868-a7f299502d86" />
+        </focus>
+        <focus>
+          <reference value="urn:uuid:eede0a9e-dce9-446a-ab44-3221ceac705f" />
+        </focus>
+        <focus>
+          <reference value="urn:uuid:2ada42f0-40c9-4546-a2be-811a360248fe" />
+        </focus>
+        <focus>
+          <reference value="urn:uuid:eef981d6-9a62-4f33-ad76-b91b71d9d522" />
+        </focus>
+        <focus>
+          <reference value="urn:uuid:17dc1252-6fd5-4ca5-800f-9f4a0389fcea" />
+        </focus>
+        <focus>
+          <reference value="urn:uuid:ef28808b-3994-4e0f-84cc-91ebc0d1999f" />
+        </focus>
+        <focus>
+          <reference value="urn:uuid:2adb8cf9-91fc-49ab-9133-f0e766b5c47c" />
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:a003d235-5d96-4cbf-bb3c-5065cc424f7f" />
+    <resource>
+      <Organization>
+    <id value="a003d235-5d96-4cbf-bb3c-5065cc424f7f" />
+    <meta>
+      <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+    </meta>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+      <value value="B5647" />
+    </identifier>
+    <name value="Oldhampton Royal Infirmary" />
+    <address>
+      <line value="Airy Sreet" />
+      <city value="Bristol" />
+      <district value="Bristol" />
+      <postalCode value="BS1 1HS" />
+    </address>
+  </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+    <resource>
+      <Organization>
+    <id value="1ae96b08-255f-4454-8053-53f32efd2c5b" />
+    <meta>
+      <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+    </meta>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+      <value value="D82015" />
+    </identifier>
+    <name value="Lingfield Royal Infirmary (Blood Sciences)" />
+    <address>
+      <line value="Lab Street" />
+      <city value="Linfield" />
+      <district value="Surrey" />
+      <postalCode value="LI1 1LB" />
+    </address>
+  </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+    <resource>
+      <Patient>
+    <id value="5424fdd7-c873-4560-9331-be5d129d4cc6" />
+    <meta>
+      <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1" />
+    </meta>
+    <identifier>
+      <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" />
+            <code value="01" />
+            <display value="Number present and verified" />
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <system value="https://fhir.nhs.uk/Id/nhs-number" />
+      <value value="9449306621" />
+    </identifier>
+    <name>
+      <use value="official" />
+      <family value="Alan" />
+      <given value="Susan" />
+    </name>
+    <gender value="female" />
+    <birthDate value="1996-02-20" />
+</Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:873bd0e7-ea4b-4fd9-853e-877e251b69e1" />
+    <resource>
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="873bd0e7-ea4b-4fd9-853e-877e251b69e1" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="888e1eb6-eeca-4899-9762-41cbd5d83d29" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+  
+        <requisition> 
+            <value value="0960ff48-a6fc-4a1a-a792-f814bc702764"/> 
+        </requisition>
+        <code>
+          <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="127561000000111"/>
+              </extension>
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="26604007" />
+            <display value="Full blood count" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="Alan,Susan" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:a003d235-5d96-4cbf-bb3c-5065cc424f7f" />
+            <display value="Oldhampton Royal Infirmary" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:e7364a4b-0970-4760-89e8-5bd0b99362cf" />
+    <resource>
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="e7364a4b-0970-4760-89e8-5bd0b99362cf" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="84acb14c-b2a7-41b8-98a2-7963f926f1be" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+  
+        <requisition> 
+            <value value="0960ff48-a6fc-4a1a-a792-f814bc702764"/> 
+        </requisition>
+        <code>
+          <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="127561000000111"/>
+              </extension>
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="26604007" />
+            <display value="Full blood count" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="Alan,Susan" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:a003d235-5d96-4cbf-bb3c-5065cc424f7f" />
+            <display value="Oldhampton Royal Infirmary" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:0b3f19a6-d978-4fe3-bb4d-5dc0a6d518fd" />
+    <resource>
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="0b3f19a6-d978-4fe3-bb4d-5dc0a6d518fd" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="7f87efb9-04a5-4213-ac81-40aea070c00f" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+  
+        <requisition> 
+            <value value="0960ff48-a6fc-4a1a-a792-f814bc702764"/> 
+        </requisition>
+        <code>
+          <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="127561000000111"/>
+              </extension>
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="26604007" />
+            <display value="Full blood count" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="Alan,Susan" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:a003d235-5d96-4cbf-bb3c-5065cc424f7f" />
+            <display value="Oldhampton Royal Infirmary" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:8cf2ebe7-0f43-4cfb-b48e-4f84ee163e94" />
+    <resource>
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="8cf2ebe7-0f43-4cfb-b48e-4f84ee163e94" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="2fc12aae-93c7-4152-8b44-dfbf55d9db01" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+  
+        <requisition> 
+            <value value="0960ff48-a6fc-4a1a-a792-f814bc702764"/> 
+        </requisition>
+        <code>
+          <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="127561000000111"/>
+              </extension>
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="26604007" />
+            <display value="Full blood count" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="Alan,Susan" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:a003d235-5d96-4cbf-bb3c-5065cc424f7f" />
+            <display value="Oldhampton Royal Infirmary" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:ed58f826-47c4-4406-ac56-a67269714251" />
+    <resource>
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="ed58f826-47c4-4406-ac56-a67269714251" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="ad0dac97-dd9a-475a-bc11-130cc61c7da2" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+  
+        <requisition> 
+            <value value="0960ff48-a6fc-4a1a-a792-f814bc702764"/> 
+        </requisition>
+        <code>
+          <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="127561000000111"/>
+              </extension>
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="26604007" />
+            <display value="Full blood count" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="Alan,Susan" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:a003d235-5d96-4cbf-bb3c-5065cc424f7f" />
+            <display value="Oldhampton Royal Infirmary" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:da3a366c-9cbe-4cef-9b2a-5774e0d2fed6" />
+    <resource>
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="da3a366c-9cbe-4cef-9b2a-5774e0d2fed6" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="d6561504-0661-428e-bebd-05b271108b0d" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+  
+        <requisition> 
+            <value value="0960ff48-a6fc-4a1a-a792-f814bc702764"/> 
+        </requisition>
+        <code>
+          <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="127561000000111"/>
+              </extension>
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="26604007" />
+            <display value="Full blood count" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="Alan,Susan" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:a003d235-5d96-4cbf-bb3c-5065cc424f7f" />
+            <display value="Oldhampton Royal Infirmary" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:5549c83f-ce4f-4cc4-aa48-6ec0ae15c645" />
+    <resource>
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="5549c83f-ce4f-4cc4-aa48-6ec0ae15c645" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="c2ed56cc-5bfc-4d3c-891d-82e1f1f36b40" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+  
+        <requisition> 
+            <value value="0960ff48-a6fc-4a1a-a792-f814bc702764"/> 
+        </requisition>
+        <code>
+          <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="127561000000111"/>
+              </extension>
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="26604007" />
+            <display value="Full blood count" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="Alan,Susan" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:a003d235-5d96-4cbf-bb3c-5065cc424f7f" />
+            <display value="Oldhampton Royal Infirmary" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:a8a68598-6465-46ff-b100-97df66270cc3" />
+    <resource>
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="a8a68598-6465-46ff-b100-97df66270cc3" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="0dc82dc5-219f-4eff-bb5e-9f52ea6504f5" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+  
+        <requisition> 
+            <value value="0960ff48-a6fc-4a1a-a792-f814bc702764"/> 
+        </requisition>
+        <code>
+          <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="127561000000111"/>
+              </extension>
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="26604007" />
+            <display value="Full blood count" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="Alan,Susan" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:a003d235-5d96-4cbf-bb3c-5065cc424f7f" />
+            <display value="Oldhampton Royal Infirmary" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:2725737b-1f1d-40ef-a0e3-c13bd3e8bc09" />
+    <resource>
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="2725737b-1f1d-40ef-a0e3-c13bd3e8bc09" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="bdb61e92-e363-4c61-9615-0dd9077f9d44" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+  
+        <requisition> 
+            <value value="0960ff48-a6fc-4a1a-a792-f814bc702764"/> 
+        </requisition>
+        <code>
+          <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="127561000000111"/>
+              </extension>
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="26604007" />
+            <display value="Full blood count" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="Alan,Susan" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:a003d235-5d96-4cbf-bb3c-5065cc424f7f" />
+            <display value="Oldhampton Royal Infirmary" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:dded7a15-3a28-4b7c-8868-a7f299502d86" />
+    <resource>
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="dded7a15-3a28-4b7c-8868-a7f299502d86" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="6a86b8ba-d4ff-4147-a3d6-ee69b97d0a59" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+  
+        <requisition> 
+            <value value="0960ff48-a6fc-4a1a-a792-f814bc702764"/> 
+        </requisition>
+        <code>
+          <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="127561000000111"/>
+              </extension>
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="26604007" />
+            <display value="Full blood count" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="Alan,Susan" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:a003d235-5d96-4cbf-bb3c-5065cc424f7f" />
+            <display value="Oldhampton Royal Infirmary" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:eede0a9e-dce9-446a-ab44-3221ceac705f" />
+    <resource>
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="eede0a9e-dce9-446a-ab44-3221ceac705f" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="768ac5f5-8a21-4a15-acb4-d96a2eaea906" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+  
+        <requisition> 
+            <value value="0960ff48-a6fc-4a1a-a792-f814bc702764"/> 
+        </requisition>
+        <code>
+          <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="127561000000111"/>
+              </extension>
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="26604007" />
+            <display value="Full blood count" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="Alan,Susan" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:a003d235-5d96-4cbf-bb3c-5065cc424f7f" />
+            <display value="Oldhampton Royal Infirmary" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:2ada42f0-40c9-4546-a2be-811a360248fe" />
+    <resource>
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="2ada42f0-40c9-4546-a2be-811a360248fe" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="2d4a1585-9ed0-4278-9f5c-3e46c11077b5" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+  
+        <requisition> 
+            <value value="0960ff48-a6fc-4a1a-a792-f814bc702764"/> 
+        </requisition>
+        <code>
+          <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="127561000000111"/>
+              </extension>
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="26604007" />
+            <display value="Full blood count" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="Alan,Susan" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:a003d235-5d96-4cbf-bb3c-5065cc424f7f" />
+            <display value="Oldhampton Royal Infirmary" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:eef981d6-9a62-4f33-ad76-b91b71d9d522" />
+    <resource>
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="eef981d6-9a62-4f33-ad76-b91b71d9d522" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="b02876a1-93ff-4292-adab-c52924701606" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+  
+        <requisition> 
+            <value value="0960ff48-a6fc-4a1a-a792-f814bc702764"/> 
+        </requisition>
+        <code>
+          <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="127561000000111"/>
+              </extension>
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="26604007" />
+            <display value="Full blood count" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="Alan,Susan" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:a003d235-5d96-4cbf-bb3c-5065cc424f7f" />
+            <display value="Oldhampton Royal Infirmary" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:17dc1252-6fd5-4ca5-800f-9f4a0389fcea" />
+    <resource>
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="17dc1252-6fd5-4ca5-800f-9f4a0389fcea" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="3b338272-0911-4931-9ea4-c7effcc98a2e" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+  
+        <requisition> 
+            <value value="0960ff48-a6fc-4a1a-a792-f814bc702764"/> 
+        </requisition>
+        <code>
+          <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="127561000000111"/>
+              </extension>
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="26604007" />
+            <display value="Full blood count" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="Alan,Susan" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:a003d235-5d96-4cbf-bb3c-5065cc424f7f" />
+            <display value="Oldhampton Royal Infirmary" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:ef28808b-3994-4e0f-84cc-91ebc0d1999f" />
+    <resource>
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="ef28808b-3994-4e0f-84cc-91ebc0d1999f" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="86599661-1f5f-4a46-8662-b3300e79b6da" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+  
+        <requisition> 
+            <value value="0960ff48-a6fc-4a1a-a792-f814bc702764"/> 
+        </requisition>
+        <code>
+          <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="127561000000111"/>
+              </extension>
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="26604007" />
+            <display value="Full blood count" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="Alan,Susan" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:a003d235-5d96-4cbf-bb3c-5065cc424f7f" />
+            <display value="Oldhampton Royal Infirmary" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:2adb8cf9-91fc-49ab-9133-f0e766b5c47c" />
+    <resource>
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="2adb8cf9-91fc-49ab-9133-f0e766b5c47c" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="51c29834-2132-4ad9-97e8-e6b645b9aa66" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+  
+        <requisition> 
+            <value value="0960ff48-a6fc-4a1a-a792-f814bc702764"/> 
+        </requisition>
+        <code>
+          <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="127561000000111"/>
+              </extension>
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="26604007" />
+            <display value="Full blood count" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="Alan,Susan" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:a003d235-5d96-4cbf-bb3c-5065cc424f7f" />
+            <display value="Oldhampton Royal Infirmary" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:7486dbf2-9f4d-484d-a22d-3e9549180c1f" />
+    <resource>
+      <DiagnosticReport xmlns="http://hl7.org/fhir">
+        <id value="7486dbf2-9f4d-484d-a22d-3e9549180c1f" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1" />
+        </meta>
+        <!--Test Request Summary-->
+        <basedOn>
+          <reference value="urn:uuid:873bd0e7-ea4b-4fd9-853e-877e251b69e1" />
+        </basedOn>
+        <status value="Final" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="721981007" />
+            <display value="Diagnostic studies report" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <issued value="2019-03-03T12:00:00+00:00" />
+        <performer>
+          <actor>
+            <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+            <display value="Oldhampton Royal Infirmary" />
+          </actor>
+        </performer>
+        <specimen>
+          <reference value="urn:uuid:5efc0c13-6911-4515-b56f-46618cf64f2c" />
+        </specimen>
+        <result>
+          <reference value="urn:uuid:b72dd52a-86a6-411c-8e3e-7b9f4bd33662" />
+        </result>
+        <result>
+          <reference value="urn:uuid:2355f3c5-c242-4fe0-a7c8-a6465e818fce" />
+        </result>
+        <result>
+          <reference value="urn:uuid:acb7d490-284a-4d16-97b3-3268aa056f58" />
+        </result>
+        <result>
+          <reference value="urn:uuid:4b3dfb98-5a16-4c01-919a-027641797717" />
+        </result>
+        <result>
+          <reference value="urn:uuid:1672f833-43df-4f02-97c1-84b112ff9c0b" />
+        </result>
+        <result>
+          <reference value="urn:uuid:e5d73913-227c-46c8-b403-ec5114b3f8a0" />
+        </result>
+        <result>
+          <reference value="urn:uuid:062885a9-42e6-41fe-bf67-873e55e10f99" />
+        </result>
+        <result>
+          <reference value="urn:uuid:fec7748a-7b2b-463a-9a64-cb9fa992c8c3" />
+        </result>
+        <result>
+          <reference value="urn:uuid:d799441d-602c-44ff-830f-ab8efbd46624" />
+        </result>
+        <result>
+          <reference value="urn:uuid:840023a2-673b-43b1-a1bb-77b3a24da0fa" />
+        </result>
+        <result>
+          <reference value="urn:uuid:37b54dff-f2a3-438d-9162-990780cbfefc" />
+        </result>
+        <result>
+          <reference value="urn:uuid:2f2da062-9a03-45c3-a6f4-cfced1496fcd" />
+        </result>
+        <result>
+          <reference value="urn:uuid:8d36ff92-1c7f-4130-98b1-3c34d9ddf393" />
+        </result>
+        <result>
+          <reference value="urn:uuid:a8f7ebc1-94f9-4f9e-bc1b-0b44f7ad9561" />
+        </result>
+        <result>
+          <reference value="urn:uuid:a38f95d8-5aef-423f-b641-547ff7ed6ddc" />
+        </result>
+        <result>
+          <reference value="urn:uuid:7a0ceae4-301e-4639-a7d5-f5fd762f7684" />
+        </result>
+</DiagnosticReport>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:5efc0c13-6911-4515-b56f-46618cf64f2c" />
+    <resource>
+      <Specimen>
+        <id value="5efc0c13-6911-4515-b56f-46618cf64f2c" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="2643bbcb-9c09-4bd7-b2f6-f819e1d64f81" />
+        </identifier>
+        <status value="available" />
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="119297000" />
+            <display value="Blood specimen" />
+          </coding>
+        </type>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <receivedTime value="2019-01-29T15:00:00+00:00" />
+        <collection>
+          <collectedDateTime value="2017-11-01T11:00:00+00:00" />
+          <quantity>
+            <value value="11" />
+            <unit value="ng/mL" />
+          </quantity>
+        </collection>
+      </Specimen>
+    </resource>
+  </entry>
+<entry>
+  <fullUrl value="urn:uuid:b72dd52a-86a6-411c-8e3e-7b9f4bd33662" />
+  <resource>
+      <Observation>
+        <id value="b72dd52a-86a6-411c-8e3e-7b9f4bd33662" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="1966bbf9-7e29-4827-81f0-001d30f0808c" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="394595002" />
+            <display value="Pathology (qualifier value)" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107511000000100" />
+            <display value="Haemoglobin mass concentration in blood" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <!--Test performed date/time. Not in EdiFACT examples. Check spec-->
+        <effectiveDateTime value="2017-11-01T15:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Oldhampton Royal Infirmary" />
+        </performer>
+        <valueQuantity>
+          <value value="134" />
+          <unit value="g/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:5efc0c13-6911-4515-b56f-46618cf64f2c" />
+        </specimen>
+      </Observation>
+  </resource>
+</entry>
+<entry>
+  <fullUrl value="urn:uuid:2355f3c5-c242-4fe0-a7c8-a6465e818fce" />
+  <resource>
+      <Observation>
+        <id value="2355f3c5-c242-4fe0-a7c8-a6465e818fce" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="250966cf-fa2d-4caa-8927-a2ee0e4cf927" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="394595002" />
+            <display value="Pathology (qualifier value)" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107511000000100" />
+            <display value="Haemoglobin mass concentration in blood" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <!--Test performed date/time. Not in EdiFACT examples. Check spec-->
+        <effectiveDateTime value="2017-11-01T15:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Oldhampton Royal Infirmary" />
+        </performer>
+        <valueQuantity>
+          <value value="134" />
+          <unit value="g/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:5efc0c13-6911-4515-b56f-46618cf64f2c" />
+        </specimen>
+      </Observation>
+  </resource>
+</entry>
+<entry>
+  <fullUrl value="urn:uuid:acb7d490-284a-4d16-97b3-3268aa056f58" />
+  <resource>
+      <Observation>
+        <id value="acb7d490-284a-4d16-97b3-3268aa056f58" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="600fe89d-ece2-4fb0-acf6-7f999cc05757" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="394595002" />
+            <display value="Pathology (qualifier value)" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107511000000100" />
+            <display value="Haemoglobin mass concentration in blood" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <!--Test performed date/time. Not in EdiFACT examples. Check spec-->
+        <effectiveDateTime value="2017-11-01T15:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Oldhampton Royal Infirmary" />
+        </performer>
+        <valueQuantity>
+          <value value="134" />
+          <unit value="g/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:5efc0c13-6911-4515-b56f-46618cf64f2c" />
+        </specimen>
+      </Observation>
+  </resource>
+</entry>
+<entry>
+  <fullUrl value="urn:uuid:4b3dfb98-5a16-4c01-919a-027641797717" />
+  <resource>
+      <Observation>
+        <id value="4b3dfb98-5a16-4c01-919a-027641797717" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="fdc562b0-0096-4e7b-b9f3-1d7539188d2f" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="394595002" />
+            <display value="Pathology (qualifier value)" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107511000000100" />
+            <display value="Haemoglobin mass concentration in blood" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <!--Test performed date/time. Not in EdiFACT examples. Check spec-->
+        <effectiveDateTime value="2017-11-01T15:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Oldhampton Royal Infirmary" />
+        </performer>
+        <valueQuantity>
+          <value value="134" />
+          <unit value="g/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:5efc0c13-6911-4515-b56f-46618cf64f2c" />
+        </specimen>
+      </Observation>
+  </resource>
+</entry>
+<entry>
+  <fullUrl value="urn:uuid:1672f833-43df-4f02-97c1-84b112ff9c0b" />
+  <resource>
+      <Observation>
+        <id value="1672f833-43df-4f02-97c1-84b112ff9c0b" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="5bc039c1-5e7b-44ea-ab98-5dfbe3a19958" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="394595002" />
+            <display value="Pathology (qualifier value)" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107511000000100" />
+            <display value="Haemoglobin mass concentration in blood" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <!--Test performed date/time. Not in EdiFACT examples. Check spec-->
+        <effectiveDateTime value="2017-11-01T15:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Oldhampton Royal Infirmary" />
+        </performer>
+        <valueQuantity>
+          <value value="134" />
+          <unit value="g/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:5efc0c13-6911-4515-b56f-46618cf64f2c" />
+        </specimen>
+      </Observation>
+  </resource>
+</entry>
+<entry>
+  <fullUrl value="urn:uuid:e5d73913-227c-46c8-b403-ec5114b3f8a0" />
+  <resource>
+      <Observation>
+        <id value="e5d73913-227c-46c8-b403-ec5114b3f8a0" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="f4810cbd-5279-4234-a710-90ca01c0e7fe" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="394595002" />
+            <display value="Pathology (qualifier value)" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107511000000100" />
+            <display value="Haemoglobin mass concentration in blood" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <!--Test performed date/time. Not in EdiFACT examples. Check spec-->
+        <effectiveDateTime value="2017-11-01T15:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Oldhampton Royal Infirmary" />
+        </performer>
+        <valueQuantity>
+          <value value="134" />
+          <unit value="g/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:5efc0c13-6911-4515-b56f-46618cf64f2c" />
+        </specimen>
+      </Observation>
+  </resource>
+</entry>
+<entry>
+  <fullUrl value="urn:uuid:062885a9-42e6-41fe-bf67-873e55e10f99" />
+  <resource>
+      <Observation>
+        <id value="062885a9-42e6-41fe-bf67-873e55e10f99" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="ec2e9fa6-9ebc-4192-b9a3-95e335dbe0de" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="394595002" />
+            <display value="Pathology (qualifier value)" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107511000000100" />
+            <display value="Haemoglobin mass concentration in blood" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <!--Test performed date/time. Not in EdiFACT examples. Check spec-->
+        <effectiveDateTime value="2017-11-01T15:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Oldhampton Royal Infirmary" />
+        </performer>
+        <valueQuantity>
+          <value value="134" />
+          <unit value="g/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:5efc0c13-6911-4515-b56f-46618cf64f2c" />
+        </specimen>
+      </Observation>
+  </resource>
+</entry>
+<entry>
+  <fullUrl value="urn:uuid:fec7748a-7b2b-463a-9a64-cb9fa992c8c3" />
+  <resource>
+      <Observation>
+        <id value="fec7748a-7b2b-463a-9a64-cb9fa992c8c3" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="75009273-8706-4f38-8d66-d1bfc4eab84c" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="394595002" />
+            <display value="Pathology (qualifier value)" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107511000000100" />
+            <display value="Haemoglobin mass concentration in blood" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <!--Test performed date/time. Not in EdiFACT examples. Check spec-->
+        <effectiveDateTime value="2017-11-01T15:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Oldhampton Royal Infirmary" />
+        </performer>
+        <valueQuantity>
+          <value value="134" />
+          <unit value="g/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:5efc0c13-6911-4515-b56f-46618cf64f2c" />
+        </specimen>
+      </Observation>
+  </resource>
+</entry>
+<entry>
+  <fullUrl value="urn:uuid:d799441d-602c-44ff-830f-ab8efbd46624" />
+  <resource>
+      <Observation>
+        <id value="d799441d-602c-44ff-830f-ab8efbd46624" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="7b8539e4-a5ac-4d0c-a2da-674cfc67ab3d" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="394595002" />
+            <display value="Pathology (qualifier value)" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107511000000100" />
+            <display value="Haemoglobin mass concentration in blood" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <!--Test performed date/time. Not in EdiFACT examples. Check spec-->
+        <effectiveDateTime value="2017-11-01T15:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Oldhampton Royal Infirmary" />
+        </performer>
+        <valueQuantity>
+          <value value="134" />
+          <unit value="g/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:5efc0c13-6911-4515-b56f-46618cf64f2c" />
+        </specimen>
+      </Observation>
+  </resource>
+</entry>
+<entry>
+  <fullUrl value="urn:uuid:840023a2-673b-43b1-a1bb-77b3a24da0fa" />
+  <resource>
+      <Observation>
+        <id value="840023a2-673b-43b1-a1bb-77b3a24da0fa" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="e5da8f5f-e20b-45af-92c0-0b0dcfb74718" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="394595002" />
+            <display value="Pathology (qualifier value)" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107511000000100" />
+            <display value="Haemoglobin mass concentration in blood" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <!--Test performed date/time. Not in EdiFACT examples. Check spec-->
+        <effectiveDateTime value="2017-11-01T15:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Oldhampton Royal Infirmary" />
+        </performer>
+        <valueQuantity>
+          <value value="134" />
+          <unit value="g/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:5efc0c13-6911-4515-b56f-46618cf64f2c" />
+        </specimen>
+      </Observation>
+  </resource>
+</entry>
+<entry>
+  <fullUrl value="urn:uuid:37b54dff-f2a3-438d-9162-990780cbfefc" />
+  <resource>
+      <Observation>
+        <id value="37b54dff-f2a3-438d-9162-990780cbfefc" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="cee42d72-a9ad-415a-be86-e7992f35b621" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="394595002" />
+            <display value="Pathology (qualifier value)" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107511000000100" />
+            <display value="Haemoglobin mass concentration in blood" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <!--Test performed date/time. Not in EdiFACT examples. Check spec-->
+        <effectiveDateTime value="2017-11-01T15:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Oldhampton Royal Infirmary" />
+        </performer>
+        <valueQuantity>
+          <value value="134" />
+          <unit value="g/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:5efc0c13-6911-4515-b56f-46618cf64f2c" />
+        </specimen>
+      </Observation>
+  </resource>
+</entry>
+<entry>
+  <fullUrl value="urn:uuid:2f2da062-9a03-45c3-a6f4-cfced1496fcd" />
+  <resource>
+      <Observation>
+        <id value="2f2da062-9a03-45c3-a6f4-cfced1496fcd" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="62596088-2949-4dc5-8174-775b296007be" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="394595002" />
+            <display value="Pathology (qualifier value)" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107511000000100" />
+            <display value="Haemoglobin mass concentration in blood" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <!--Test performed date/time. Not in EdiFACT examples. Check spec-->
+        <effectiveDateTime value="2017-11-01T15:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Oldhampton Royal Infirmary" />
+        </performer>
+        <valueQuantity>
+          <value value="134" />
+          <unit value="g/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:5efc0c13-6911-4515-b56f-46618cf64f2c" />
+        </specimen>
+      </Observation>
+  </resource>
+</entry>
+<entry>
+  <fullUrl value="urn:uuid:8d36ff92-1c7f-4130-98b1-3c34d9ddf393" />
+  <resource>
+      <Observation>
+        <id value="8d36ff92-1c7f-4130-98b1-3c34d9ddf393" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="64809471-6bfb-4942-910f-ab0bb35faf3c" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="394595002" />
+            <display value="Pathology (qualifier value)" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107511000000100" />
+            <display value="Haemoglobin mass concentration in blood" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <!--Test performed date/time. Not in EdiFACT examples. Check spec-->
+        <effectiveDateTime value="2017-11-01T15:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Oldhampton Royal Infirmary" />
+        </performer>
+        <valueQuantity>
+          <value value="134" />
+          <unit value="g/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:5efc0c13-6911-4515-b56f-46618cf64f2c" />
+        </specimen>
+      </Observation>
+  </resource>
+</entry>
+<entry>
+  <fullUrl value="urn:uuid:a8f7ebc1-94f9-4f9e-bc1b-0b44f7ad9561" />
+  <resource>
+      <Observation>
+        <id value="a8f7ebc1-94f9-4f9e-bc1b-0b44f7ad9561" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="8aa1b0fa-5d28-42d9-a2d7-dbc4a95df89c" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="394595002" />
+            <display value="Pathology (qualifier value)" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107511000000100" />
+            <display value="Haemoglobin mass concentration in blood" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <!--Test performed date/time. Not in EdiFACT examples. Check spec-->
+        <effectiveDateTime value="2017-11-01T15:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Oldhampton Royal Infirmary" />
+        </performer>
+        <valueQuantity>
+          <value value="134" />
+          <unit value="g/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:5efc0c13-6911-4515-b56f-46618cf64f2c" />
+        </specimen>
+      </Observation>
+  </resource>
+</entry>
+<entry>
+  <fullUrl value="urn:uuid:a38f95d8-5aef-423f-b641-547ff7ed6ddc" />
+  <resource>
+      <Observation>
+        <id value="a38f95d8-5aef-423f-b641-547ff7ed6ddc" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="85c6053e-2a4e-4438-b202-19b1273adef4" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="394595002" />
+            <display value="Pathology (qualifier value)" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107511000000100" />
+            <display value="Haemoglobin mass concentration in blood" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <!--Test performed date/time. Not in EdiFACT examples. Check spec-->
+        <effectiveDateTime value="2017-11-01T15:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Oldhampton Royal Infirmary" />
+        </performer>
+        <valueQuantity>
+          <value value="134" />
+          <unit value="g/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:5efc0c13-6911-4515-b56f-46618cf64f2c" />
+        </specimen>
+      </Observation>
+  </resource>
+</entry>
+<entry>
+  <fullUrl value="urn:uuid:7a0ceae4-301e-4639-a7d5-f5fd762f7684" />
+  <resource>
+      <Observation>
+        <id value="7a0ceae4-301e-4639-a7d5-f5fd762f7684" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="cfd2fb08-0f77-4ceb-8097-6eb9d1967fcf" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="394595002" />
+            <display value="Pathology (qualifier value)" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107511000000100" />
+            <display value="Haemoglobin mass concentration in blood" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:5424fdd7-c873-4560-9331-be5d129d4cc6" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <!--Test performed date/time. Not in EdiFACT examples. Check spec-->
+        <effectiveDateTime value="2017-11-01T15:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:1ae96b08-255f-4454-8053-53f32efd2c5b" />
+          <display value="Oldhampton Royal Infirmary" />
+        </performer>
+        <valueQuantity>
+          <value value="134" />
+          <unit value="g/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:5efc0c13-6911-4515-b56f-46618cf64f2c" />
+        </specimen>
+      </Observation>
+  </resource>
+</entry>
+</Bundle>
