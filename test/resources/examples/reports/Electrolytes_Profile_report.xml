@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="824ecb6d-66ce-4a66-858d-440396f3e364" />
+  <meta>
+    <lastUpdated value="2015-04-07T19:30:00+00:00" />
+    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1" />
+  </meta>
+  <identifier>
+    <system value="https://tools.ietf.org/html/rfc4122" />
+    <value value="9c593cf5-7b89-4912-8bb2-a516618857a8" />
+  </identifier>
+  <type value="message" />
+  <entry>
+    <fullUrl value="urn:uuid:c69edf1f-6358-447a-a291-8a9ce535bb8c" />
+    <resource>
+            <MessageHeader>
+        <id value="c69edf1f-6358-447a-a291-8a9ce535bb8c" />
+        <event>
+          <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2" />
+          <code value="ITK012M" />
+          <display value="ITK National Pathology" />
+        </event>
+        <receiver>
+          <reference value="urn:uuid:92154208-e6b3-4a8a-a99d-e0f8681002ab" />
+        </receiver>
+        <sender>
+          <reference value="urn:uuid:f892c84b-a114-45ec-9866-19b4d5579d26" />
+        </sender>
+        <timestamp value="2019-03-14T10:10:16+00:00" />
+        <source>
+          <endpoint value="NOROT003" />
+        </source>
+        <focus>
+          <reference value="urn:uuid:9b95c97a-c5bb-413f-8c74-9c83d67d8c86" />
+        </focus>
+        <focus>
+          <reference value="urn:uuid:97a68727-f05d-47f4-bf47-820f748df2bb" />
+        </focus>
+        <focus>
+          <reference value="urn:uuid:e2f18fc6-24fa-4591-a1c5-01e088415f5f" />
+        </focus>
+        <focus>
+          <reference value="urn:uuid:a1ea6dab-8f1d-479d-9c9f-9cdbe56831ae" />
+        </focus>
+        <focus>
+          <reference value="urn:uuid:0302bede-3407-4d46-b461-bd7d4e3e392f" />
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:f892c84b-a114-45ec-9866-19b4d5579d26" />
+    <resource>
+      <Organization>
+    <id value="f892c84b-a114-45ec-9866-19b4d5579d26" />
+    <meta>
+      <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+    </meta>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+      <value value="B5647" />
+    </identifier>
+    <name value="Oldhampton Royal Infirmary" />
+    <address>
+      <line value="Airy Sreet" />
+      <city value="Greenham" />
+      <district value="Bridgwater" />
+      <postalCode value="BW1 1GP" />
+    </address>
+  </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:92154208-e6b3-4a8a-a99d-e0f8681002ab" />
+    <resource>
+      <Organization>
+    <id value="92154208-e6b3-4a8a-a99d-e0f8681002ab" />
+    <meta>
+      <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+    </meta>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+      <value value="D82015" />
+    </identifier>
+    <name value="Lingfield Royal Infirmary (Blood Sciences)" />
+    <address>
+      <line value="Lab Street" />
+      <city value="Linfield" />
+      <district value="Surrey" />
+      <postalCode value="LI1 1LB" />
+    </address>
+  </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:16174295-963c-4f8b-be65-6a8a40d10c49" />
+    <resource>
+      <Patient>
+    <id value="16174295-963c-4f8b-be65-6a8a40d10c49" />
+    <meta>
+      <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1" />
+    </meta>
+    <identifier>
+      <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" />
+            <code value="01" />
+            <display value="Number present and verified" />
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <system value="https://fhir.nhs.uk/Id/nhs-number" />
+      <value value="9449306621" />
+    </identifier>
+    <name>
+      <use value="official" />
+      <family value="Alan" />
+      <given value="Susan" />
+    </name>
+    <gender value="female" />
+    <birthDate value="1996-02-20" />
+</Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:9b95c97a-c5bb-413f-8c74-9c83d67d8c86" />
+    <resource>
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="9b95c97a-c5bb-413f-8c74-9c83d67d8c86" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="1718c8c0-1172-4e16-a59e-847d69b27cb6" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+  
+        <requisition> 
+            <value value="fcfaba8f-3c9a-4ce1-8435-1786ca650f93"/> 
+        </requisition>
+        <code>
+          <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="2772191000000116"/>
+              </extension>
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="1107871000000107" />
+            <display value="Sodium substance concentration in serum" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:16174295-963c-4f8b-be65-6a8a40d10c49" />
+          <display value="Alan,Susan" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:f892c84b-a114-45ec-9866-19b4d5579d26" />
+            <display value="Oldhampton Royal Infirmary" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:92154208-e6b3-4a8a-a99d-e0f8681002ab" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:97a68727-f05d-47f4-bf47-820f748df2bb" />
+    <resource>
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="97a68727-f05d-47f4-bf47-820f748df2bb" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="a4c4424a-f0d2-4c54-8252-59257e31fa1f" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+  
+        <requisition> 
+            <value value="fcfaba8f-3c9a-4ce1-8435-1786ca650f93"/> 
+        </requisition>
+        <code>
+          <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="277195100000011"/>
+              </extension>
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="1107761000000109" />
+            <display value="Potassium substance concentration in serum" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:16174295-963c-4f8b-be65-6a8a40d10c49" />
+          <display value="Alan,Susan" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:f892c84b-a114-45ec-9866-19b4d5579d26" />
+            <display value="Oldhampton Royal Infirmary" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:92154208-e6b3-4a8a-a99d-e0f8681002ab" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:e2f18fc6-24fa-4591-a1c5-01e088415f5f" />
+    <resource>
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="e2f18fc6-24fa-4591-a1c5-01e088415f5f" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="90df36a5-ec11-4bfa-88b5-0ab21aa387ed" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+  
+        <requisition> 
+            <value value="fcfaba8f-3c9a-4ce1-8435-1786ca650f93"/> 
+        </requisition>
+        <code>
+          <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="2769231000000111"/>
+              </extension>
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="1106511000000102" />
+            <display value="Chloride substance concentration in serum" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:16174295-963c-4f8b-be65-6a8a40d10c49" />
+          <display value="Alan,Susan" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:f892c84b-a114-45ec-9866-19b4d5579d26" />
+            <display value="Oldhampton Royal Infirmary" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:92154208-e6b3-4a8a-a99d-e0f8681002ab" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:a1ea6dab-8f1d-479d-9c9f-9cdbe56831ae" />
+    <resource>
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="a1ea6dab-8f1d-479d-9c9f-9cdbe56831ae" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="764c3ea7-90de-4c5c-a022-7a9116575967" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+  
+        <requisition> 
+            <value value="fcfaba8f-3c9a-4ce1-8435-1786ca650f93"/> 
+        </requisition>
+        <code>
+          <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="2770231000000114"/>
+              </extension>
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="1107001000000108" />
+            <display value="Creatinine substance concentration in serum" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:16174295-963c-4f8b-be65-6a8a40d10c49" />
+          <display value="Alan,Susan" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:f892c84b-a114-45ec-9866-19b4d5579d26" />
+            <display value="Oldhampton Royal Infirmary" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:92154208-e6b3-4a8a-a99d-e0f8681002ab" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:0302bede-3407-4d46-b461-bd7d4e3e392f" />
+    <resource>
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="0302bede-3407-4d46-b461-bd7d4e3e392f" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="58131bd9-932d-46a8-858f-ff46513ff98c" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+  
+        <requisition> 
+            <value value="fcfaba8f-3c9a-4ce1-8435-1786ca650f93"/> 
+        </requisition>
+        <code>
+          <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="2771211000000114"/>
+              </extension>
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="1107411000000104" />
+            <display value="Estimated glomerular filtration rate by laboratory calculation" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:16174295-963c-4f8b-be65-6a8a40d10c49" />
+          <display value="Alan,Susan" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:f892c84b-a114-45ec-9866-19b4d5579d26" />
+            <display value="Oldhampton Royal Infirmary" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:92154208-e6b3-4a8a-a99d-e0f8681002ab" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:3abb0294-22ad-4377-8b2d-8fb70dde6a73" />
+    <resource>
+      <DiagnosticReport xmlns="http://hl7.org/fhir">
+        <id value="3abb0294-22ad-4377-8b2d-8fb70dde6a73" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1" />
+        </meta>
+        <!--Test Request Summary-->
+        <basedOn>
+          <reference value="urn:uuid:9b95c97a-c5bb-413f-8c74-9c83d67d8c86" />
+        </basedOn>
+        <status value="Final" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="721981007" />
+            <display value="Diagnostic studies report" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:16174295-963c-4f8b-be65-6a8a40d10c49" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <issued value="2019-03-03T12:00:00+00:00" />
+        <performer>
+          <actor>
+            <reference value="urn:uuid:92154208-e6b3-4a8a-a99d-e0f8681002ab" />
+            <display value="Oldhampton Royal Infirmary" />
+          </actor>
+        </performer>
+        <specimen>
+          <reference value="urn:uuid:67fb5e35-2d19-4f03-8ef5-28b10ff0b56c" />
+        </specimen>
+        <result>
+          <reference value="urn:uuid:fa7c6e28-43ff-4a98-ab0d-1c2515a896c7" />
+        </result>
+        <result>
+          <reference value="urn:uuid:967a6389-6fe8-4d1b-b96c-b0791a63ad51" />
+        </result>
+        <result>
+          <reference value="urn:uuid:9f3d134c-b541-49e4-8302-08178309cd76" />
+        </result>
+        <result>
+          <reference value="urn:uuid:38c7f246-82e8-48d1-88cd-c10738252722" />
+        </result>
+        <result>
+          <reference value="urn:uuid:583b4951-d43f-4b09-add1-eb9fcc0d29e3" />
+        </result>
+</DiagnosticReport>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:67fb5e35-2d19-4f03-8ef5-28b10ff0b56c" />
+    <resource>
+      <Specimen>
+        <id value="67fb5e35-2d19-4f03-8ef5-28b10ff0b56c" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="9fdb91b6-5acc-4376-aef0-95aa5d37aabf" />
+        </identifier>
+        <status value="available" />
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="119364003" />
+            <display value="Serum specimen" />
+          </coding>
+        </type>
+        <subject>
+          <reference value="urn:uuid:16174295-963c-4f8b-be65-6a8a40d10c49" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <receivedTime value="2019-01-29T15:00:00+00:00" />
+        <collection>
+          <collectedDateTime value="2017-11-01T11:00:00+00:00" />
+          <quantity>
+            <value value="11" />
+            <unit value="ng/mL" />
+          </quantity>
+        </collection>
+      </Specimen>
+    </resource>
+  </entry>
+<entry>
+  <fullUrl value="urn:uuid:fa7c6e28-43ff-4a98-ab0d-1c2515a896c7" />
+  <resource>
+      <Observation>
+        <id value="fa7c6e28-43ff-4a98-ab0d-1c2515a896c7" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="cb404f79-40f5-43bf-8739-053c1a61bb24" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="394595002" />
+            <display value="Pathology (qualifier value)" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107871000000107" />
+            <display value="Sodium substance concentration in serum" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:16174295-963c-4f8b-be65-6a8a40d10c49" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <!--Test performed date/time. Not in EdiFACT examples. Check spec-->
+        <effectiveDateTime value="2017-11-01T15:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:92154208-e6b3-4a8a-a99d-e0f8681002ab" />
+          <display value="Oldhampton Royal Infirmary" />
+        </performer>
+        <valueQuantity>
+          <value value="142" />
+          <unit value="mmol/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:67fb5e35-2d19-4f03-8ef5-28b10ff0b56c" />
+        </specimen>
+      </Observation>
+  </resource>
+</entry>
+<entry>
+  <fullUrl value="urn:uuid:967a6389-6fe8-4d1b-b96c-b0791a63ad51" />
+  <resource>
+      <Observation>
+        <id value="967a6389-6fe8-4d1b-b96c-b0791a63ad51" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="8fb8ba64-8bba-41b6-a375-dbc12eafeb24" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="394595002" />
+            <display value="Pathology (qualifier value)" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107871000000107" />
+            <display value="Sodium substance concentration in serum" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:16174295-963c-4f8b-be65-6a8a40d10c49" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <!--Test performed date/time. Not in EdiFACT examples. Check spec-->
+        <effectiveDateTime value="2017-11-01T15:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:92154208-e6b3-4a8a-a99d-e0f8681002ab" />
+          <display value="Oldhampton Royal Infirmary" />
+        </performer>
+        <valueQuantity>
+          <value value="142" />
+          <unit value="mmol/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:67fb5e35-2d19-4f03-8ef5-28b10ff0b56c" />
+        </specimen>
+      </Observation>
+  </resource>
+</entry>
+<entry>
+  <fullUrl value="urn:uuid:9f3d134c-b541-49e4-8302-08178309cd76" />
+  <resource>
+      <Observation>
+        <id value="9f3d134c-b541-49e4-8302-08178309cd76" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="21893761-5db9-4f1e-a5a4-0c9edb6b296e" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="394595002" />
+            <display value="Pathology (qualifier value)" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107871000000107" />
+            <display value="Sodium substance concentration in serum" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:16174295-963c-4f8b-be65-6a8a40d10c49" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <!--Test performed date/time. Not in EdiFACT examples. Check spec-->
+        <effectiveDateTime value="2017-11-01T15:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:92154208-e6b3-4a8a-a99d-e0f8681002ab" />
+          <display value="Oldhampton Royal Infirmary" />
+        </performer>
+        <valueQuantity>
+          <value value="142" />
+          <unit value="mmol/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:67fb5e35-2d19-4f03-8ef5-28b10ff0b56c" />
+        </specimen>
+      </Observation>
+  </resource>
+</entry>
+<entry>
+  <fullUrl value="urn:uuid:38c7f246-82e8-48d1-88cd-c10738252722" />
+  <resource>
+      <Observation>
+        <id value="38c7f246-82e8-48d1-88cd-c10738252722" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="a99fece0-227f-4f56-83ae-bc421d6d8557" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="394595002" />
+            <display value="Pathology (qualifier value)" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107871000000107" />
+            <display value="Sodium substance concentration in serum" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:16174295-963c-4f8b-be65-6a8a40d10c49" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <!--Test performed date/time. Not in EdiFACT examples. Check spec-->
+        <effectiveDateTime value="2017-11-01T15:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:92154208-e6b3-4a8a-a99d-e0f8681002ab" />
+          <display value="Oldhampton Royal Infirmary" />
+        </performer>
+        <valueQuantity>
+          <value value="142" />
+          <unit value="mmol/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:67fb5e35-2d19-4f03-8ef5-28b10ff0b56c" />
+        </specimen>
+      </Observation>
+  </resource>
+</entry>
+<entry>
+  <fullUrl value="urn:uuid:583b4951-d43f-4b09-add1-eb9fcc0d29e3" />
+  <resource>
+      <Observation>
+        <id value="583b4951-d43f-4b09-add1-eb9fcc0d29e3" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="e502407a-1e1d-4afc-8767-178285600154" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="394595002" />
+            <display value="Pathology (qualifier value)" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="1107871000000107" />
+            <display value="Sodium substance concentration in serum" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:16174295-963c-4f8b-be65-6a8a40d10c49" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <!--Test performed date/time. Not in EdiFACT examples. Check spec-->
+        <effectiveDateTime value="2017-11-01T15:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:92154208-e6b3-4a8a-a99d-e0f8681002ab" />
+          <display value="Oldhampton Royal Infirmary" />
+        </performer>
+        <valueQuantity>
+          <value value="142" />
+          <unit value="mmol/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:67fb5e35-2d19-4f03-8ef5-28b10ff0b56c" />
+        </specimen>
+      </Observation>
+  </resource>
+</entry>
+</Bundle>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="37a0cf0b-d518-4a96-831a-ceed169f5ae1" />
+  <meta>
+    <lastUpdated value="2015-04-07T19:30:00+00:00" />
+    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1" />
+  </meta>
+  <identifier>
+    <system value="https://tools.ietf.org/html/rfc4122" />
+    <value value="c779f980-62a8-4a05-a3a3-6f79ff5f381e" />
+  </identifier>
+  <type value="message" />
+  <entry>
+    <fullUrl value="urn:uuid:2420a8ec-dd34-42fb-aabf-50e633e60528" />
+    <resource>
+            <MessageHeader>
+        <id value="2420a8ec-dd34-42fb-aabf-50e633e60528" />
+        <event>
+          <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2" />
+          <code value="ITK012M" />
+          <display value="ITK National Pathology" />
+        </event>
+        <receiver>
+          <reference value="urn:uuid:08c1fd6e-5ae1-456c-88f7-fb88cbfd27a9" />
+        </receiver>
+        <sender>
+          <reference value="urn:uuid:bd74b7e8-da1c-4103-b805-38a8b53b27c4" />
+        </sender>
+        <timestamp value="2019-03-14T10:10:16+00:00" />
+        <source>
+          <endpoint value="NOROT003" />
+        </source>
+        <focus>
+          <reference value="urn:uuid:9c790ae7-88e5-4332-bd38-477ce6f18a4a" />
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:bd74b7e8-da1c-4103-b805-38a8b53b27c4" />
+    <resource>
+      <Organization>
+    <id value="bd74b7e8-da1c-4103-b805-38a8b53b27c4" />
+    <meta>
+      <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+    </meta>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+      <value value="B5647" />
+    </identifier>
+    <name value="Oldhampton Royal Infirmary" />
+    <address>
+      <line value="Airy Sreet" />
+      <city value="Greenham" />
+      <district value="Bridgwater" />
+      <postalCode value="BW1 1GP" />
+    </address>
+  </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:08c1fd6e-5ae1-456c-88f7-fb88cbfd27a9" />
+    <resource>
+      <Organization>
+    <id value="08c1fd6e-5ae1-456c-88f7-fb88cbfd27a9" />
+    <meta>
+      <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+    </meta>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+      <value value="D82015" />
+    </identifier>
+    <name value="Lingfield Royal Infirmary (Blood Sciences)" />
+    <address>
+      <line value="Lab Street" />
+      <city value="Linfield" />
+      <district value="Surrey" />
+      <postalCode value="LI1 1LB" />
+    </address>
+  </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:96e7df60-8385-4735-a710-6c314fa9724d" />
+    <resource>
+      <Patient>
+    <id value="96e7df60-8385-4735-a710-6c314fa9724d" />
+    <meta>
+      <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1" />
+    </meta>
+    <identifier>
+      <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" />
+            <code value="01" />
+            <display value="Number present and verified" />
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <system value="https://fhir.nhs.uk/Id/nhs-number" />
+      <value value="9449306621" />
+    </identifier>
+    <name>
+      <use value="official" />
+      <family value="Alan" />
+      <given value="Susan" />
+    </name>
+    <gender value="female" />
+    <birthDate value="1996-02-20" />
+</Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:9c790ae7-88e5-4332-bd38-477ce6f18a4a" />
+    <resource>
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="9c790ae7-88e5-4332-bd38-477ce6f18a4a" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="ddd6e441-b80c-4ceb-9420-7a45b84dfd13" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+        <code>
+          <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="433612018"/>
+              </extension>
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="117346004" />
+            <display value="Glucose measurement estimated from glycated haemoglobin" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:96e7df60-8385-4735-a710-6c314fa9724d" />
+          <display value="Alan,Susan" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:bd74b7e8-da1c-4103-b805-38a8b53b27c4" />
+            <display value="Oldhampton Royal Infirmary" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:08c1fd6e-5ae1-456c-88f7-fb88cbfd27a9" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:7cd0882f-38df-427c-a647-af68b6bbfd4d" />
+    <resource>
+      <DiagnosticReport xmlns="http://hl7.org/fhir">
+        <id value="7cd0882f-38df-427c-a647-af68b6bbfd4d" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1" />
+        </meta>
+        <!--Test Request Summary-->
+        <basedOn>
+          <reference value="urn:uuid:9c790ae7-88e5-4332-bd38-477ce6f18a4a" />
+        </basedOn>
+        <status value="Final" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="721981007" />
+            <display value="Diagnostic studies report" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:96e7df60-8385-4735-a710-6c314fa9724d" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <issued value="2019-03-03T12:00:00+00:00" />
+        <performer>
+          <actor>
+            <reference value="urn:uuid:08c1fd6e-5ae1-456c-88f7-fb88cbfd27a9" />
+            <display value="Oldhampton Royal Infirmary" />
+          </actor>
+        </performer>
+        <specimen>
+          <reference value="urn:uuid:c8bb720b-2470-48b8-949c-59f18b07a24b" />
+        </specimen>
+        <result>
+          <reference value="urn:uuid:62d50f3d-fba6-4496-89a2-7ac8e93ff4ed" />
+        </result>
+</DiagnosticReport>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c8bb720b-2470-48b8-949c-59f18b07a24b" />
+    <resource>
+      <Specimen>
+        <id value="c8bb720b-2470-48b8-949c-59f18b07a24b" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="3f2e03f4-fbba-4163-a8bb-063d734f3f8b" />
+        </identifier>
+        <status value="available" />
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="119297000" />
+            <display value="Blood specimen" />
+          </coding>
+        </type>
+        <subject>
+          <reference value="urn:uuid:96e7df60-8385-4735-a710-6c314fa9724d" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <receivedTime value="2019-01-29T15:00:00+00:00" />
+        <collection>
+          <collectedDateTime value="2017-11-01T11:00:00+00:00" />
+          <quantity>
+            <value value="11" />
+            <unit value="ng/mL" />
+          </quantity>
+        </collection>
+      </Specimen>
+    </resource>
+  </entry>
+<entry>
+  <fullUrl value="urn:uuid:62d50f3d-fba6-4496-89a2-7ac8e93ff4ed" />
+  <resource>
+      <Observation>
+        <id value="62d50f3d-fba6-4496-89a2-7ac8e93ff4ed" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="a43a8bdd-ed66-4e93-aea6-fd1f4571ee13" />
+        </identifier>
+        <status value="final" />
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="394595002" />
+            <display value="Pathology (qualifier value)" />
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="3531000237106" />
+            <display value="HbA1c (glycated haemoglobin A1c)/HbA1 (haemoglobin A1) percent in blood" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:96e7df60-8385-4735-a710-6c314fa9724d" />
+          <display value="ALAN,Susan" />
+        </subject>
+        <!--Test performed date/time. Not in EdiFACT examples. Check spec-->
+        <effectiveDateTime value="2017-11-01T15:00:00+00:00" />
+        <performer>
+          <reference value="urn:uuid:08c1fd6e-5ae1-456c-88f7-fb88cbfd27a9" />
+          <display value="Oldhampton Royal Infirmary" />
+        </performer>
+        <valueQuantity>
+          <value value="16.5" />
+          <unit value="mmol/L" />
+        </valueQuantity>
+        <specimen>
+          <reference value="urn:uuid:c8bb720b-2470-48b8-949c-59f18b07a24b" />
+        </specimen>
+      </Observation>
+  </resource>
+</entry>
+</Bundle>

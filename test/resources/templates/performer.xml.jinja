@@ -1,0 +1,17 @@
+<Organization>
+    <id value="{{ performer_uuid }}" />
+    <meta>
+      <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+    </meta>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+      <value value="{{ performer_identifier }}" />
+    </identifier>
+    <name value="{{ performer_name }}" />
+    <address>
+      <line value="{{ performer_address_line }}" />
+      <city value="{{ performer_city }}" />
+      <district value="{{ performer_district }}" />
+      <postalCode value="{{ performer_postcode }}" />
+    </address>
+  </Organization>

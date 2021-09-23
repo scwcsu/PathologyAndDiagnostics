@@ -1,0 +1,132 @@
+<Bundle xmlns="http://hl7.org/fhir" xmlns:xsltUtils="http://XLab.Resource/xsltUtils">
+  <id value="36115be9-7c6b-4f93-97c9-6973e5bb6810" />
+  <type value="message" />
+  <entry>
+    <fullUrl value="urn:uuid:d4d8d09c-137c-4a3e-ad16-c5ac40682003" />
+    <resource>
+      <MessageHeader>
+        <id value="d4d8d09c-137c-4a3e-ad16-c5ac40682003" />
+        <event>
+          <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2" />
+          <code value="ITK012M" />
+          <display value="ITK National Pathology" />
+        </event>
+        <receiver>
+          <reference value="urn:uuid:df8c8aec-8f23-4953-bf54-3409781743a7" />
+        </receiver>
+        <sender>
+          <reference value="urn:uuid:f371bd95-4940-4f93-9b5e-a6148142d8ad" />
+        </sender>
+        <timestamp value="2021-07-15T10:59:13Z" />
+        <source>
+          <endpoint value="NPEX" />
+        </source>
+        <focus>
+          <reference value="urn:uuid:5bb815f9-4b96-4ef1-a52a-40c81a3838db" />
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:f371bd95-4940-4f93-9b5e-a6148142d8ad" />
+    <resource>
+      <Organization>
+        <id value="f371bd95-4940-4f93-9b5e-a6148142d8ad" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+        </meta>
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+          <value value="RGD12" />
+        </identifier>
+        <name value="Lingfield Royal Infirmary" />
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:df8c8aec-8f23-4953-bf54-3409781743a7" />
+    <resource>
+      <Organization>
+        <id value="df8c8aec-8f23-4953-bf54-3409781743a7" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+        </meta>
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+          <value value="D82015" />
+        </identifier>
+        <name value="Lingfield Royal Infirmary (Blood Sciences)" />
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:ef62c3d4-eebe-4e10-8126-8bb78a41b1e9" />
+    <resource>
+      <Patient>
+        <id value="ef62c3d4-eebe-4e10-8126-8bb78a41b1e9" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1" />
+        </meta>
+        <identifier>
+          <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+            <valueCodeableConcept>
+              <coding>
+                <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" />
+                <code value="01" />
+                <display value="Number present and verified" />
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <system value="https://fhir.nhs.uk/Id/nhs-number" />
+          <value value="9432003812" />
+        </identifier>
+        <name>
+          <use value="official" />
+          <family value="Davies" />
+          <given value="Michael" />
+        </name>
+        <birthDate value="1963-06-01" />
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:5bb815f9-4b96-4ef1-a52a-40c81a3838db" />
+    <resource>
+      <ProcedureRequest>
+        <id value="5bb815f9-4b96-4ef1-a52a-40c81a3838db" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="0196ecef-d941-4700-a2a8-1b28d64ebaf2" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="63476009" />
+            <display value="Prostate specific antigen measurement" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:ef62c3d4-eebe-4e10-8126-8bb78a41b1e9" />
+          <display value="Davies, Michael" />
+        </subject>
+        <authoredOn value="2021-07-15T10:59:00Z" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:f371bd95-4940-4f93-9b5e-a6148142d8ad" />
+            <display value="Khan, Ibrahim" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:df8c8aec-8f23-4953-bf54-3409781743a7" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+</Bundle>

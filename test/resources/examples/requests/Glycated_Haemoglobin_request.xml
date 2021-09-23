@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="1deba68f-f86c-49f0-9fa0-8fe95901707f" />
+  <identifier>
+    <system value="https://tools.ietf.org/html/rfc4122" />
+    <value value="3903a635-5ee1-4196-9768-89104efb0104" />
+  </identifier>
+  <type value="message" />
+  <entry>
+    <fullUrl value="urn:uuid:faee9891-59ba-4723-b500-320a5f450ee8" />
+    <resource>
+            <MessageHeader>
+        <id value="faee9891-59ba-4723-b500-320a5f450ee8" />
+        <event>
+          <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2" />
+          <code value="ITK012M" />
+          <display value="ITK National Pathology" />
+        </event>
+        <receiver>
+          <reference value="urn:uuid:51775e35-2be1-4d0f-b9c0-7607a1cec804" />
+        </receiver>
+        <sender>
+          <reference value="urn:uuid:436ec165-9982-4b90-96f2-a2390407bc09" />
+        </sender>
+        <timestamp value="2019-03-14T10:10:16+00:00" />
+        <source>
+          <endpoint value="NOROT003" />
+        </source>
+        <focus>
+          <reference value="urn:uuid:3470b98e-db8c-41cb-8422-a7dc3a9d317c" />
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:436ec165-9982-4b90-96f2-a2390407bc09" />
+    <resource>
+      <Organization>
+    <id value="436ec165-9982-4b90-96f2-a2390407bc09" />
+    <meta>
+      <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+    </meta>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+      <value value="B5647" />
+    </identifier>
+    <name value="Oldhampton Royal Infirmary" />
+    <address>
+      <line value="Airy Sreet" />
+      <city value="Greenham" />
+      <district value="Bridgwater" />
+      <postalCode value="BW1 1GP" />
+    </address>
+  </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:51775e35-2be1-4d0f-b9c0-7607a1cec804" />
+    <resource>
+      <Organization>
+    <id value="51775e35-2be1-4d0f-b9c0-7607a1cec804" />
+    <meta>
+      <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" />
+    </meta>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+      <value value="D82015" />
+    </identifier>
+    <name value="Lingfield Royal Infirmary (Blood Sciences)" />
+    <address>
+      <line value="Lab Street" />
+      <city value="Linfield" />
+      <district value="Surrey" />
+      <postalCode value="LI1 1LB" />
+    </address>
+  </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:2c1bc739-94b0-4f7d-8ea2-eb6fae4f338d" />
+    <resource>
+      <Patient>
+    <id value="2c1bc739-94b0-4f7d-8ea2-eb6fae4f338d" />
+    <meta>
+      <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1" />
+    </meta>
+    <identifier>
+      <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" />
+            <code value="01" />
+            <display value="Number present and verified" />
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <system value="https://fhir.nhs.uk/Id/nhs-number" />
+      <value value="9449306621" />
+    </identifier>
+    <name>
+      <use value="official" />
+      <family value="Alan" />
+      <given value="Susan" />
+    </name>
+    <gender value="female" />
+    <birthDate value="1996-02-20" />
+</Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:3470b98e-db8c-41cb-8422-a7dc3a9d317c" />
+    <resource>
+      <ProcedureRequest xmlns="http://hl7.org/fhir">
+        <id value="3470b98e-db8c-41cb-8422-a7dc3a9d317c" />
+        <meta>
+          <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1" />
+        </meta>
+        <identifier>
+          <system value="https://tools.ietf.org/html/rfc4122" />
+          <value value="65286a82-3a52-464a-a6b3-b4d0c078f05a" />
+        </identifier>
+        <status value="active" />
+        <intent value="order" />
+        <priority value="routine" />
+        <code>
+          <coding>
+            <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">
+              <extension url="descriptionId">
+                <valueId value="433612018"/>
+              </extension>
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="117346004" />
+            <display value="Glucose measurement estimated from glycated haemoglobin" />
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:2c1bc739-94b0-4f7d-8ea2-eb6fae4f338d" />
+          <display value="Alan,Susan" />
+        </subject>
+        <authoredOn value="2019-06-04" />
+        <requester>
+          <agent>
+            <reference value="urn:uuid:436ec165-9982-4b90-96f2-a2390407bc09" />
+            <display value="Oldhampton Royal Infirmary" />
+          </agent>
+        </requester>
+        <performer>
+          <reference value="urn:uuid:51775e35-2be1-4d0f-b9c0-7607a1cec804" />
+          <display value="Lingfield Royal Infirmary (Blood Sciences)" />
+        </performer>
+      </ProcedureRequest>
+    </resource>
+  </entry>
+</Bundle>

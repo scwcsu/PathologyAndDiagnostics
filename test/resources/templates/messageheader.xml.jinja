@@ -1,0 +1,23 @@
+      <MessageHeader>
+        <id value="{{ message_header_uuid }}" />
+        <event>
+          <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2" />
+          <code value="ITK012M" />
+          <display value="ITK National Pathology" />
+        </event>
+        <receiver>
+          <reference value="urn:uuid:{{ receiver_uuid }}" />
+        </receiver>
+        <sender>
+          <reference value="urn:uuid:{{ sender_uuid }}" />
+        </sender>
+        <timestamp value="{{ timestamp }}" />
+        <source>
+          <endpoint value="{{ endpoint }}" />
+        </source>
+{% for focus_uuid in focus_uuids %}
+        <focus>
+          <reference value="urn:uuid:{{ focus_uuid }}" />
+        </focus>
+{% endfor %}
+      </MessageHeader>
