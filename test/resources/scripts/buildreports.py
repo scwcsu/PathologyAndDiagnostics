@@ -38,7 +38,8 @@ def load_test_data(report_data_csv="../templates/ReportsTestDataSetup.csv",reque
             request_id = int(row["RequestId"])
             request = request_rows[request_id-1]
             #Drop the id from the request row
-            del(request["Id"])
+            if "Id" in request:
+                del(request["Id"])
             yield {**row, **request} # N.B Python >=3.5
             counter = counter + 1
 
@@ -347,13 +348,14 @@ def build_simple_report(record):
     f.close()
 
 def build_profile_reports(profile_records):
-    requests = []
-    request_ids = []
-    specimens = []
-    specimen_ids = []
-    observations = []
-    observation_ids = []
     for profile in profile_records:
+        requests = []
+        request_ids = []
+        specimens = []
+        specimen_ids = []
+        specimen_groups = [] #A specimen is only included once per group
+        observations = []
+        observation_ids = []
         print(profile_records[profile])
         #Use the first request for patient etc.
         record = profile_records[profile][0]
@@ -387,10 +389,8 @@ def build_profile_reports(profile_records):
         #Loop the others to make the request
         for profile_part in profile_records[profile]:
             request_uuid = uuid.uuid4()
-            specimen_uuid = uuid.uuid4()
             observation_uuid = uuid.uuid4()
             request_ids.append(request_uuid)
-            specimen_ids.append(specimen_uuid)
             observation_ids.append(observation_uuid)
             request = build_request(request_uuid,uuid.uuid4(),"active",
                                     profile_part["Code"],
@@ -405,17 +405,22 @@ def build_profile_reports(profile_records):
                                     profile_part["DisplayCode"],
                                     requisition_id)
             requests.append(request)
-            specimen = build_specimen(specimen_uuid, uuid.uuid4(), 
-                                        record["SpecimenStatus"], 
-                                        record["SpecimenCode"],
-                                        record["SpecimenDisplay"], 
-                                        patient_uuid, 
-                                        "%s,%s" % (record["Family Name"].upper(),record["Given Name"]), 
-                                        record["SpecimenReceivedTime"],
-                                        record["SpecimenCollectedTime"], 
-                                        record["SpecimenQuantityValue"],
-                                        record["SpecimenQuantityUnit"])
-            specimens.append(specimen)
+            if record["SpecimenGroup"] not in specimen_groups:
+                specimen_uuid = uuid.uuid4()
+                specimen = build_specimen(specimen_uuid, uuid.uuid4(), 
+                                            record["SpecimenStatus"], 
+                                            record["SpecimenCode"],
+                                            record["SpecimenDisplay"], 
+                                            patient_uuid, 
+                                            "%s,%s" % (record["Family Name"].upper(),record["Given Name"]), 
+                                            record["SpecimenReceivedTime"],
+                                            record["SpecimenCollectedTime"], 
+                                            record["SpecimenQuantityValue"],
+                                            record["SpecimenQuantityUnit"])
+                specimen_groups.append(record["SpecimenGroup"])
+                specimen_ids.append(specimen_uuid)
+                specimens.append(specimen)
+
             observation_values = build_values_dictionary(record)
 
             observation = build_observation(observation_uuid, uuid.uuid4(),
@@ -462,11 +467,11 @@ def build():
     profiles = {}
     for record in load_test_data():
         print(record)
-        if record["ProfileId"].strip()=="":
+        if record["GroupId"].strip()=="":
             build_simple_report(record)
         else:
             #Build a list of the data we need for each profile test
-            profileId = record["ProfileId"].strip()
+            profileId = record["GroupId"].strip()
             if profileId in profiles:
                 profiles[profileId].append(record)
             else:
