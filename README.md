@@ -18,11 +18,11 @@ https://developer.nhs.uk/apis/itk3nationalpathology-1-1-0/
  ### test/resources/structures
 Downloaded versions of the Care Connect FHIR structures for use in validation
 
-### Supplier Test Cases
+### test/resources/Supplier Test Cases
 Defined test cases for different supplier types designed to excercise different parts of the standard.
 
-### Supplier Test progress update
+### test/resources/Supplier Test progress update
 Progress reports for suppliers undertaking testing.
 
-### templates
+### test/resources/templates
 Jinja2 templates and sample data CSV files used to generate the example message bundles.
